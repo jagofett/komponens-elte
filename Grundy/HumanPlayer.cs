@@ -8,7 +8,7 @@ namespace Grundy
 {
     class HumanPlayer : AbstractPlayer
     {
-        public HumanPlayer(String name)
+        public HumanPlayer(string name)
         {
             this.name = name;
         }

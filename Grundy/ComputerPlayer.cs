@@ -8,7 +8,7 @@ namespace Grundy
 {
     class ComputerPlayer : AbstractPlayer
     {
-        public ComputerPlayer(String name)
+        public ComputerPlayer(string name)
         {
             this.name = name;
         }
