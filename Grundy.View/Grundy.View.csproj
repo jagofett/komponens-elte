@@ -98,6 +98,10 @@
       <Project>{e608825f-0906-4f0b-97c7-9be79c213262}</Project>
       <Name>Grundy.Interface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Grundy.Model\Grundy.Library.csproj">
+      <Project>{db5f7479-9677-453d-bf6d-9f4f927a6ed9}</Project>
+      <Name>Grundy.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

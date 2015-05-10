@@ -9,19 +9,17 @@ namespace Grundy.Library.Model
     public class Pile
     {
         public int Size { get; private set; }
-        public int Id { get; private set; }
-        static int _staticId;
+        //public int Id { get; private set; }
 
         public Pile(int size) 
         {
             Size = size;
-            Id = ++_staticId;
         }
 
 
         public bool CanDivide()
         {
-            return Size > 2 && (Size % 2 != 0);
+            return Size > 2;
         }
 
         public void Take(int amount)

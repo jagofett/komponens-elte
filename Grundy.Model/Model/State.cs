@@ -29,11 +29,6 @@ namespace Grundy.Library.Model
             ActPlayer = actPlayer;
         }
 
-        public Pile this[int id] 
-        {
-            get { return Piles == null ? null :  Piles.FirstOrDefault(p => p.Id == id); }
-        }
-
         public void AddPile(Pile pile)
         {
             Piles.Add(pile);
