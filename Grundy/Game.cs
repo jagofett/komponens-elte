@@ -14,6 +14,8 @@ namespace Grundy
         private AbstractPlayer playerTwo;
         private bool turn;
 
+        public Boolean IsGameOver { get { return piles == null || piles.Any(pile => pile.canDivide()); } }
+
         public Game(string gameType, int initialSize)
         {
             this.gameType = gameType;
