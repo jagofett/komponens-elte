@@ -11,7 +11,7 @@ namespace Grundy.Library.Model
     public class GameLogic
     {
         private State _state;
-        public bool isStarted { get; private set; }
+        public bool IsStarted { get; private set; }
         private Player _playerOne;
         private Player _playerTwo;
 
@@ -24,7 +24,7 @@ namespace Grundy.Library.Model
         public EventHandler GameEnd;
         public EventHandler PlayerChange;
 
-        public void OnGameStart()
+        private void OnGameStart()
         {
             if (GameStart != null)
             {
@@ -32,14 +32,14 @@ namespace Grundy.Library.Model
             }
         }
 
-        public void OnGameEnd()
+        private void OnGameEnd()
         {
             if (GameEnd != null)
             {
                 GameEnd(this, new EventArgs());
             }
         }
-        public void OnPlayerChange()
+        private void OnPlayerChange()
         {
             if (PlayerChange != null)
             {
@@ -49,7 +49,7 @@ namespace Grundy.Library.Model
 
         public GameLogic()
         {
-            isStarted = false;
+            IsStarted = false;
         }
 
         public void Start(int size, GameType type)
@@ -70,7 +70,7 @@ namespace Grundy.Library.Model
                     _playerTwo = new Player { Name = "CPU 1", PlayerType = PlayerType.ComputerPlayer };
                     break;
             }
-            isStarted = true;
+            IsStarted = true;
             _state.ActPlayer = _playerOne;
             OnGameStart();
         }
@@ -79,7 +79,7 @@ namespace Grundy.Library.Model
         {
             if (!_state.Piles.Any(pile => pile.CanDivide()))
             {
-                isStarted = false;
+                IsStarted = false;
                 OnGameEnd();
             }
         }
@@ -87,7 +87,7 @@ namespace Grundy.Library.Model
         public bool Step(int pileNumber, int stackSize)
         {
             //todo check
-            if (!isStarted)
+            if (!IsStarted)
             {
                 return false;
             }
@@ -103,7 +103,7 @@ namespace Grundy.Library.Model
 
             _state.ActPlayer = ActPlayer.Id == _playerOne.Id ? _playerTwo : _playerOne;
             CheckGameOver();
-            if (isStarted)
+            if (IsStarted)
             {
                 OnPlayerChange();
             }

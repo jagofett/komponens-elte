@@ -11,3 +11,6 @@
 /Grundy.Model/obj/Debug
 /Grundy.View/bin/Debug
 /Grundy.View/obj/Debug
+*.user
+*.lref
+*.cache
