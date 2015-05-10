@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grundy.Interface", "Grundy.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grundy.Library", "Grundy.Model\Grundy.Library.csproj", "{DB5F7479-9677-453D-BF6D-9F4F927A6ED9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grundy.View", "Grundy.View\Grundy.View.csproj", "{D4A0193C-B0EC-4266-B751-36901EEC384C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DB5F7479-9677-453D-BF6D-9F4F927A6ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB5F7479-9677-453D-BF6D-9F4F927A6ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB5F7479-9677-453D-BF6D-9F4F927A6ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A0193C-B0EC-4266-B751-36901EEC384C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A0193C-B0EC-4266-B751-36901EEC384C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A0193C-B0EC-4266-B751-36901EEC384C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A0193C-B0EC-4266-B751-36901EEC384C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

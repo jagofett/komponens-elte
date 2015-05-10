@@ -9,11 +9,13 @@ namespace Grundy.Interface
     {
         void StartGame();
         void QuitGame();
-        ICollection<IStep> GetNextSteps();
+        ICollection<IState> GetNextStates();
+
+        int Evaluate(IState state);
 
     }
 
-    public interface IStep
+    public interface IState
     {
         
     }
