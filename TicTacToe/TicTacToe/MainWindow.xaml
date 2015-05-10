@@ -1,0 +1,43 @@
+﻿<Window x:Class="TicTacToe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:TicTacToe"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ScrollViewer x:Name="scrollbar" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+            <ItemsControl ItemsSource="{Binding Elements}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="{Binding Size}" Columns="{Binding Size}"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Command="{Binding StepCommand}" Background="White" CommandParameter="{Binding Id}" Content="{Binding Text}" Focusable="false" MinHeight="30" MinWidth="30" MaxHeight="30" MaxWidth="30" FontWeight="Bold" FontSize="19">
+                            <Button.Style>
+                                <!-- gomb stílusa, ahol a színét megadjuk -->
+                                <Style TargetType="Button">
+                                    <Style.Triggers>
+                                        <!-- a szín egy adatkötés hatására fog változni -->
+                                        <DataTrigger Binding="{Binding IsEnabled}" Value="True">
+                                            <Setter Property="Background" Value="Gray" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding IsEnabled}" Value="False">
+                                            <Setter Property="Background" Value="White" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="Grid.Row" Value="{Binding X}" />
+                        <Setter Property="Grid.Column" Value="{Binding Y}" />
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+E:\ELTE\KOMPONENS\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll
+E:\ELTE\KOMPONENS\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
+E:\ELTE\KOMPONENS\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
+E:\ELTE\KOMPONENS\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
+E:\ELTE\KOMPONENS\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll
+E:\ELTE\KOMPONENS\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
+E:\ELTE\KOMPONENS\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csprojResolveAssemblyReference.cache
+E:\ELTE\KOMPONENS\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
+E:\ELTE\KOMPONENS\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
