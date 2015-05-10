@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Grundy/bin/Debug
+/Grundy/obj/Debug
+/Grundy.Evaluate/obj/Debug
+/Grundy.Interface/bin/Debug
+/Grundy.Interface/obj/Debug
+/Grundy.Model/bin/Debug
+/Grundy.Model/obj/Debug
+/Grundy.View/bin/Debug
+/Grundy.View/obj/Debug

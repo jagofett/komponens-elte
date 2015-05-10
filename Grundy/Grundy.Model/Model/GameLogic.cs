@@ -128,9 +128,8 @@ namespace Grundy.Library.Model
             var stack = newPile.Where((pile, i) => pile.Size != curList[i].Size).First();
             var pileId = newPile.IndexOf(stack);
             var stackSize = stack.Size;
-            Step(pileId, stackSize);
 
-            return true;
+            return Step(pileId, stackSize); 
         }
 
         public State GetState()
