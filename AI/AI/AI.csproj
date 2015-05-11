@@ -43,11 +43,8 @@
     <Reference Include="Grundy">
       <HintPath>..\..\komponens-elte\Grundy\Grundy\bin\Debug\Grundy.exe</HintPath>
     </Reference>
-    <Reference Include="Grundy.Library">
-      <HintPath>..\..\Grundy\Grundy.Model\bin\Debug\Grundy.Library.dll</HintPath>
-    </Reference>
-    <Reference Include="TicTacToeLibrary">
-      <HintPath>..\..\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll</HintPath>
+    <Reference Include="Grundy.Interface">
+      <HintPath>..\..\Grundy\Grundy.Interface\bin\Debug\Grundy.Interface.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
