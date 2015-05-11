@@ -44,7 +44,7 @@
       <HintPath>..\..\komponens-elte\Grundy\Grundy\bin\Debug\Grundy.exe</HintPath>
     </Reference>
     <Reference Include="Grundy.Library">
-      <HintPath>..\..\komponens-elte\Grundy\Grundy.Model\bin\Debug\Grundy.Library.dll</HintPath>
+      <HintPath>..\..\Grundy\Grundy.Model\bin\Debug\Grundy.Library.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
