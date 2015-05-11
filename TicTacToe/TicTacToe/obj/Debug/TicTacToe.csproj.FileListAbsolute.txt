@@ -49,3 +49,6 @@ E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\FrameWork.pdb
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb

@@ -1,8 +1,66 @@
 ﻿<Window x:Class="Grundy.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="545" MinWidth="545" MinHeight="350">
     <Grid>
-        
+    <ScrollViewer x:Name="scrollbar" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" x:Name="label" Content="Válassz méretet:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Slider Grid.Row="0" x:Name="slider" HorizontalAlignment="Left" Margin="132,18,0,0" VerticalAlignment="Top" Minimum="7" Maximum="100" SmallChange="1" Value="{Binding Size}" Width="197"/>
+            <Label Grid.Row="0" x:Name="sizeLabel" Content="{Binding Size}" HorizontalAlignment="Left" Margin="360,26,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="button" Content="Indítás" IsEnabled="{Binding Gomb}" HorizontalAlignment="Left" Margin="432,18,0,0" VerticalAlignment="Top" Width="75"/>
+
+            <ItemsControl Grid.Row="1" ItemsSource="{Binding Elements}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="{Binding Size}" Columns="1"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                    <ItemsControl  ItemsSource="{Binding Element}">
+                    <!--a mezőket tároló vezérlő-->
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <!--a gombokat egy rácsba fűzzük fel-->
+                            <UniformGrid Rows="{Binding meretTul}" Columns="{Binding meretTul}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <!--az elemek gombok lesznek-->
+                        <DataTemplate>
+                            <Button Command="{Binding lepesParancs}" CommandParameter="{Binding Sorszam}" Content="{Binding Text}" Width="40" Height="40" FontSize="40" FontWeight="Bold" FontFamily="Wingdings" Foreground="{Binding Szin}">
+                                <Button.Background>
+                                    <SolidColorBrush Color="{Binding PalyaSzin}" />
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                    <ItemsControl.ItemContainerStyle>
+                        <!--a függőségi tulajdonságokat kjülön kell kötnünk-->
+                        <Style>
+                            <Setter Property="Grid.Row" Value="{Binding X}" />
+                            <Setter Property="Grid.Column" Value="{Binding Y}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                </ItemsControl>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="Grid.Row" Value="{Binding X}" />
+                        <Setter Property="Grid.Column" Value="{Binding Y}" />
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+            </ItemsControl>
+            
+            
+        </Grid>
+        </ScrollViewer>
     </Grid>
 </Window>

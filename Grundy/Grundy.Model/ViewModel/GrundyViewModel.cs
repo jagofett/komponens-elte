@@ -24,7 +24,14 @@ namespace Grundy.Library.ViewModel
                 OnPropertyChanged("Elements");
             }
         }
-        public int Size { get; set; }
+        private int _mainSize;
+
+        public int Size
+        {
+            get { return _mainSize; }
+            set { _mainSize = value; OnPropertyChanged("Size"); }
+        }
+
         public Player ActPlayer { get; private set; }
 
         public bool IsStarted
@@ -32,7 +39,7 @@ namespace Grundy.Library.ViewModel
             get { return _gameLogic != null && _gameLogic.IsStarted; }
         }
 
-
+        public bool Gomb => !IsStarted;
 
         #region Constructors
 
@@ -42,6 +49,7 @@ namespace Grundy.Library.ViewModel
             _gameLogic.GameStart += GameStart;
             _gameLogic.GameEnd += GameEnd;
             _gameLogic.PlayerChange += PlayerChange;
+            Size = 7;
         }
 
 

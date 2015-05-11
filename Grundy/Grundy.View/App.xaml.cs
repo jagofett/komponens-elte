@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -7,15 +8,18 @@ using System.Threading.Tasks;
 using System.Windows;
 using Grundy.Interface;
 using Grundy.Library.Model;
+using Grundy.Library.ViewModel;
 
 namespace Grundy.View
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application, IGameModel
+    public partial class App : Application
     {
         private GameLogic _model;
+        private MainWindow _view;
+        private GrundyViewModel _viewModel;
         public App()
         {
             Startup += new StartupEventHandler(AppStartup);
@@ -24,15 +28,12 @@ namespace Grundy.View
         private void AppStartup(object sender, StartupEventArgs startupEventArgs)
         {
             _model = new GameLogic();
-            _model.Start(10, GameType.PvP);
-            _model.Step(0, 2);
-            _model.Step(1, 3);
-            var state = new State(2, GameType.PvP);
-            state.AddPile(new Pile(1));
-            state.AddPile(new Pile(2));
-            state.AddPile(new Pile(5));
-            _model.Step(state);
+            _view = new MainWindow();
+            _viewModel = new GrundyViewModel(_model);
+            _view.DataContext = _viewModel;
+            _view.Show();
         }
+
 
         public void StartGame()
         {
@@ -44,7 +45,7 @@ namespace Grundy.View
             throw new NotImplementedException();
         }
 
-        public ICollection<IState> GetNextStates()
+        public ICollection GetNextStates()
         {
             throw new NotImplementedException();
         }
