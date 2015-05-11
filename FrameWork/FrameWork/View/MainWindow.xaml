@@ -1,0 +1,10 @@
+﻿<Window x:Class="FrameWork.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <UniformGrid>
+        <Button Command="{Binding TicTacToeCommand}" Content="Amőba"/>
+        <Button Command="{Binding GrundyCommand}" Content="Grundy mama játéka"/>
+        <Button Command="{Binding MillCommand}" Content="Malom"/>
+    </UniformGrid>
+</Window>

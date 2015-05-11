@@ -1,0 +1,47 @@
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\bin\Debug\FrameWork.exe.config
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\FrameWork.csprojResolveAssemblyReference.cache
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\View\MainWindow.baml
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\View\MainWindow.g.cs
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\FrameWork_MarkupCompile.cache
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\bin\Debug\FrameWork.exe
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\bin\Debug\FrameWork.pdb
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\App.g.cs
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\FrameWork.g.resources
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\FrameWork.Properties.Resources.resources
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\FrameWork.csproj.GenerateResource.Cache
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\FrameWork.exe
+c:\users\zoli\documents\visual studio 2013\Projects\FrameWork\FrameWork\obj\Debug\FrameWork.pdb
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\bin\Debug\FrameWork.exe.config
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\FrameWork.exe
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\FrameWork.pdb
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\bin\Debug\FrameWork.exe
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\bin\Debug\FrameWork.pdb
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\bin\Debug\TicTacToe.exe
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.dll
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\bin\Debug\TicTacToe.pdb
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.pdb
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\FrameWork.csprojResolveAssemblyReference.cache
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\View\MainWindow.baml
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\View\MainWindow.g.cs
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\App.g.cs
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\FrameWork_MarkupCompile.cache
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\FrameWork.g.resources
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\FrameWork.Properties.Resources.resources
+E:\ELTE\KOMPONENS\FrameWork\FrameWork\obj\Debug\FrameWork.csproj.GenerateResource.Cache
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\bin\Debug\FrameWork.exe.config
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.exe
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.pdb
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\bin\Debug\FrameWork.exe
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\bin\Debug\FrameWork.pdb
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.exe
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.dll
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.pdb
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.pdb
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.csprojResolveAssemblyReference.cache
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\View\MainWindow.baml
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\View\MainWindow.g.cs
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\App.g.cs
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork_MarkupCompile.cache
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.g.resources
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.Properties.Resources.resources
+E:\ELTE\KOMPONENS\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.csproj.GenerateResource.Cache

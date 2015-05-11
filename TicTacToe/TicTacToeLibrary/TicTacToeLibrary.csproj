@@ -34,9 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Model\Evaluate.cs" />
     <Compile Include="Model\Logic.cs" />
     <Compile Include="Model\State.cs" />
@@ -45,6 +42,9 @@
     <Compile Include="ViewModel\TicTacToeElement.cs" />
     <Compile Include="ViewModel\TicTacToeViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
