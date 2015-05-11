@@ -20,8 +20,18 @@ namespace Grundy.Library.Model
             get { return _state.ActPlayer; }
         }
 
+        public int ActPileCount
+        {
+            get { return _state == null ? 0 : _state.Piles.Count; }
+        }
+
+        public Pile this[int i]
+        {
+            get { return _state.Piles[i]; }
+        }
+
         public EventHandler GameStart;
-        public EventHandler GameEnd;
+        public EventHandler<GrundyWinEvenetArgs> GameEnd;
         public EventHandler PlayerChange;
 
         private void OnGameStart()
@@ -32,11 +42,11 @@ namespace Grundy.Library.Model
             }
         }
 
-        private void OnGameEnd()
+        private void OnGameEnd(Player winner)
         {
             if (GameEnd != null)
             {
-                GameEnd(this, new EventArgs());
+                GameEnd(this, new GrundyWinEvenetArgs(winner));
             }
         }
         private void OnPlayerChange()
@@ -80,7 +90,7 @@ namespace Grundy.Library.Model
             if (!_state.Piles.Any(pile => pile.CanDivide()))
             {
                 IsStarted = false;
-                OnGameEnd();
+                OnGameEnd(ActPlayer);
             }
         }
 
@@ -92,7 +102,7 @@ namespace Grundy.Library.Model
                 return false;
             }
             var targetPile = _state.Piles.ElementAtOrDefault(pileNumber);
-            if (targetPile == null || targetPile.Size < stackSize || targetPile.Size - stackSize == stackSize)
+            if (targetPile == null || !targetPile.CanDivide() || targetPile.Size <= stackSize || targetPile.Size - stackSize == stackSize)
             {
                 return false;
             }
@@ -154,5 +164,15 @@ namespace Grundy.Library.Model
         PvP,
         CvP,
         CvC
+    }
+
+    public class GrundyWinEvenetArgs : EventArgs
+    {
+        public Player WinnerPlayer { get; set; }
+
+        public GrundyWinEvenetArgs(Player winner)
+        {
+            WinnerPlayer = winner;
+        }
     }
 }
