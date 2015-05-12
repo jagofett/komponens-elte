@@ -34,12 +34,7 @@ namespace TicTacToe
         private void GameEnded(object sender, TicTacToeViewModel.WinEventArgs e)
         {
             Player = e.Player;
-            quitGame();
-        }
-
-        public void quitGame()
-        {
-            if (MessageBox.Show("Game over! " + Player + " wins! Would you like to play again?", "TicTacToe", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.No)
+            if (MessageBox.Show("Game over! " + e.Player + " wins! Would you like to play again?", "TicTacToe", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.No)
             {
                 _view.Close();
             }
@@ -48,5 +43,12 @@ namespace TicTacToe
                 _viewModel.NewGame();
             }
         }
+
+        public void quitGame()
+        {
+            _view.Close();
+        }
+
+
     }
 }
