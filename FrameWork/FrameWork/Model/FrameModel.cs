@@ -13,7 +13,14 @@ namespace FrameWork.Model
         List<IGame> games;
         int currentGame;
 
+        public event EventHandler<GameAddedEventArgs> GameAdded;
+        
         public FrameModel()
+        {
+            currentGame = -1;
+        }
+
+        public void init()
         {
             PreLoad();
 
@@ -27,6 +34,8 @@ namespace FrameWork.Model
             {
                 IGame g = (IGame)Activator.CreateInstance(type);
                 games.Add(g);
+                String gameName = type.Assembly.FullName.Split(',')[0];
+                GameAdded(this, new GameAddedEventArgs(games.Count - 1, gameName));
             }
         }
 
@@ -43,7 +52,11 @@ namespace FrameWork.Model
 
         public void endGame()
         {
-            games[currentGame].quitGame();
+            if (currentGame != -1)
+            {
+                games[currentGame].quitGame();
+                currentGame = -1;
+            }
         }
 
         public void PreLoad()

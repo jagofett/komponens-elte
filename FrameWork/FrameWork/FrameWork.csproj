@@ -66,9 +66,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\FrameModel.cs" />
+    <Compile Include="Model\GameAddedEventArgs.cs" />
     <Compile Include="Model\IGame.cs" />
     <Compile Include="ViewModel\DelegateCommand.cs" />
     <Compile Include="ViewModel\FrameViewModel.cs" />
+    <Compile Include="ViewModel\GameButton.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
