@@ -46,8 +46,11 @@ namespace FrameWork.Model
 
         public void startGame(int i)
         {
-            currentGame = i;
-            games[currentGame].newGame();
+            if (currentGame == -1)
+            {
+                currentGame = i;
+                games[currentGame].newGame();
+            }
         }
 
         public void endGame()
