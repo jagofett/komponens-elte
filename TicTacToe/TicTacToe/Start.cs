@@ -15,7 +15,7 @@ namespace TicTacToe
         private TicTacToeViewModel _viewModel;
         private Logic _model;
         private MainWindow _view;
-        private bool Player;
+        private string Player;
 
         public void newGame()
         {
@@ -39,8 +39,7 @@ namespace TicTacToe
 
         public void quitGame()
         {
-            String jatekos = Player ? "O játékos" : "X játékos";
-            if (MessageBox.Show("Vége a játéknak! " + jatekos + " nyert! Szeretnél újra játszani?", "Amőba", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.No)
+            if (MessageBox.Show("Game over! " + Player + " wins! Would you like to play again?", "TicTacToe", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.No)
             {
                 _view.Close();
             }

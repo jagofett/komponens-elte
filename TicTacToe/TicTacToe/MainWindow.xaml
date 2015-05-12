@@ -4,7 +4,19 @@
         xmlns:local="clr-namespace:TicTacToe"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <ScrollViewer x:Name="scrollbar" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" IsMainMenu="True">
+            <MenuItem Header="Players">
+                <MenuItem Header="Player vs Player" IsChecked="{Binding PP}" Command="{Binding PlayerChangedCommand}" CommandParameter="PP"/>
+                <MenuItem Header="Player vs CPU" IsChecked="{Binding PC}" Command="{Binding PlayerChangedCommand}" CommandParameter="PC"/>
+                <MenuItem Header="CPU vs CPU" IsChecked="{Binding CC}" Command="{Binding PlayerChangedCommand}" CommandParameter="CC"/>
+            </MenuItem>
+        </Menu>
+        <ScrollViewer Grid.Row="1" x:Name="scrollbar" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
             <ItemsControl ItemsSource="{Binding Elements}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -39,5 +51,12 @@
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>
         </ScrollViewer>
+        <DockPanel Grid.Row="2">
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    <TextBlock Text="{Binding InfoText}"/>
+                </StatusBarItem>
+            </StatusBar>
+        </DockPanel>
     </Grid>
 </Window>
