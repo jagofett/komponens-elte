@@ -17,13 +17,12 @@ namespace TicTacToe
     {
         public App()
         {
-            //Startup += new StartupEventHandler(App_Startup);
+            Startup += new StartupEventHandler(App_Startup);
         }
 
         private void App_Startup(object sender, StartupEventArgs e)
         {
-            Start s = new Start();
-	        s.StartGame(null);
+            //new Start().newGame();
         }
     }
 }
