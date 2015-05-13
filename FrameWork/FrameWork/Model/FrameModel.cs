@@ -40,6 +40,16 @@ namespace FrameWork.Model
                 String gameName = type.Assembly.FullName.Split(',')[0];
                 GameAdded(this, new GameAddedEventArgs(games.Count - 1, gameName));
             }
+            
+            //Test
+
+            /*games= new List<IGame>();
+            games.Add(new GameMock());
+            games.Add(new GameMock());
+            games.Add(new GameMock());
+            GameAdded(this, new GameAddedEventArgs(0, "Test1"));
+            GameAdded(this, new GameAddedEventArgs(0, "Test2"));
+            GameAdded(this, new GameAddedEventArgs(0, "Test3"));*/
         }
 
         FrameModel(List<IGame> games)
