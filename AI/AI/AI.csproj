@@ -40,11 +40,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="FrameWork">
-      <HintPath>..\..\FrameWork\FrameWork\bin\Debug\FrameWork.exe</HintPath>
-    </Reference>
-    <Reference Include="Grundy">
-      <HintPath>..\..\komponens-elte\Grundy\Grundy\bin\Debug\Grundy.exe</HintPath>
+    <Reference Include="Interfaces">
+      <HintPath>..\..\Interfaces\Interfaces\bin\Debug\Interfaces.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

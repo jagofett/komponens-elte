@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FrameWork">
-      <HintPath>..\..\FrameWork\FrameWork\bin\Debug\FrameWork.exe</HintPath>
+    <Reference Include="Interfaces">
+      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
