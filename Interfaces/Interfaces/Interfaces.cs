@@ -11,7 +11,6 @@ namespace Interfaces
 		Object GetState();
 		int Evaluate(Object state);
 
-        
 	}
 
 
