@@ -34,12 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ai">
-      <HintPath>..\..\AI\AI\bin\Debug\ai.dll</HintPath>
-    </Reference>
-    <Reference Include="Interfaces">
-      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -49,6 +43,10 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TicTacToe, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -69,6 +67,7 @@
     </Compile>
     <Compile Include="Model\FrameModel.cs" />
     <Compile Include="Model\GameAddedEventArgs.cs" />
+    <Compile Include="Model\IGame.cs" />
     <Compile Include="ViewModel\DelegateCommand.cs" />
     <Compile Include="ViewModel\FrameViewModel.cs" />
     <Compile Include="ViewModel\GameButton.cs" />

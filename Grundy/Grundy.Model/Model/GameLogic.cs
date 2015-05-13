@@ -4,14 +4,13 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Interfaces;
+using Grundy.Interface;
 
 namespace Grundy.Library.Model
 {
     public class GameLogic
     {
         private State _state;
-	    private IAi _ai;
         public bool IsStarted { get; private set; }
         private Player _playerOne;
         private Player _playerTwo;
@@ -65,9 +64,8 @@ namespace Grundy.Library.Model
             }
         }
 
-        public GameLogic(IAi aiModule = null)
+        public GameLogic()
         {
-	        _ai = aiModule;
             IsStarted = false;
         }
 
@@ -115,6 +113,7 @@ namespace Grundy.Library.Model
             {
                 return false;
             }
+            GetNextStates();
             targetPile.Take(stackSize);
 
             _state.Piles.Insert(pileNumber, new Pile(stackSize));
@@ -156,15 +155,36 @@ namespace Grundy.Library.Model
             return _state;
         }
 
-        public List<Object> GetNextStates(Object startStateObj)
+        public List<State> GetNextStates()
         {
-	        var startState = startStateObj as State;
-            throw new NotImplementedException();
+            List<State> states = new List<State>();
+
+            foreach (Pile pile in _state.Piles)
+            {
+                int originalSize = pile.Size;
+                int currentSize = pile.Size;
+
+                while (originalSize > 2 && --currentSize > originalSize / 2)
+                {
+                    State tempState = new State(_state);
+                    foreach (Pile tempPile in tempState.Piles)
+                    {
+                        if (tempPile.Id == pile.Id)
+                        {
+                            tempPile.Take(currentSize);
+                            tempState.Piles.Add(new Pile(originalSize - (originalSize - currentSize)));
+                            states.Add(tempState);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return states;
         }
 
-        public int Evaluate(Object stateObject)
+        public int Evaluate(State state)
         {
-	        var state = stateObject as State;
             throw new NotImplementedException();
         }
 

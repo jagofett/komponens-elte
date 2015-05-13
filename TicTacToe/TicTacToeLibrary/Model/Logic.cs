@@ -18,7 +18,7 @@ namespace TicTacToe.Model
         private Evaluate eval;
         private State state;
 
-        public static int SIZE = 50;
+        public const int SIZE = 30;
 
         public Logic()
         {

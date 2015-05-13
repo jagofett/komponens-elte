@@ -1,13 +1,13 @@
+﻿using FrameWork.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Interfaces;
 
 
 namespace ai
 {
-    public class Ai : IAi
+    public class AI
     {
 
         public int doMinimax(IGame game)
@@ -17,7 +17,7 @@ namespace ai
             return minimax(tree, 4, true, game);
         }
 
-        public int doAlphaBeta(IGame game)
+        public int doAlphabeta(IGame game)
         {
             GameTree<Object> gt = new GameTree<Object>(game.GetState());
             GameTree<Object> tree = makeGameTree(gt, game);

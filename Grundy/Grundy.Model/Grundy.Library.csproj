@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Model\GameLogic.cs" />
     <Compile Include="Model\Pile.cs" />
     <Compile Include="Model\Player.cs" />
@@ -45,9 +48,10 @@
     <Compile Include="ViewModel\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Interfaces">
-      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Grundy.Interface\Grundy.Interface.csproj">
+      <Project>{e608825f-0906-4f0b-97c7-9be79c213262}</Project>
+      <Name>Grundy.Interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

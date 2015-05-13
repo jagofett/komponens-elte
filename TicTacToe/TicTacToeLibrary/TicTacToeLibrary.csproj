@@ -39,7 +39,6 @@
     <Compile Include="Model\State.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\DelegateCommand.cs" />
-    <Compile Include="ViewModel\Testing.cs" />
     <Compile Include="ViewModel\TicTacToeElement.cs" />
     <Compile Include="ViewModel\TicTacToeViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
