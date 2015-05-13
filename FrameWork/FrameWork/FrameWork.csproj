@@ -34,7 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ai">
+    <Reference Include="ai, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\AI\AI\bin\Debug\ai.dll</HintPath>
     </Reference>
     <Reference Include="Interfaces">

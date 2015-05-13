@@ -16,7 +16,7 @@ namespace Interfaces
 
 	public interface IAi
 	{
-		int doMinimax(IGame game);
-		int doAlphaBeta(IGame game);
+		Object doMinimax(IGame game);
+		Object doAlphaBeta(IGame game);
 	}
 }

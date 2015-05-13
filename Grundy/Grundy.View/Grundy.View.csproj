@@ -34,7 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interfaces">
+    <Reference Include="Interfaces, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />

@@ -13,8 +13,8 @@ namespace FrameWork.Model
     class FrameModel
     {
         List<IGame> games;
+        private IAi _ai;
         int currentGame;
-	    private readonly IAi _ai = new Ai();
 
         public event EventHandler<GameAddedEventArgs> GameAdded;
         
@@ -26,7 +26,7 @@ namespace FrameWork.Model
         public void init()
         {
             PreLoad();
-
+            _ai = new Ai();
             games = new List<IGame>();
             Type igame = typeof(IGame);
             var types = AppDomain.CurrentDomain.GetAssemblies().
@@ -52,7 +52,6 @@ namespace FrameWork.Model
             if (currentGame == -1)
             {
                 currentGame = i;
-				//inject ai for all games.
                 games[currentGame].StartGame(_ai);
             }
         }
