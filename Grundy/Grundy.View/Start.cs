@@ -35,19 +35,18 @@ namespace Grundy.View
 
         public List<object> GetNextStates(object actState)
         {
-            throw new NotImplementedException();
+            return new List<object> {_model.GetNextStates(actState as State)};
         }
 
         public object GetState()
         {
-            throw new NotImplementedException();
+            return _model == null ? null : _model.GetState();
         }
 
         public int Evaluate(object state)
         {
-            throw new NotImplementedException();
+            return (int) (_model == null ? -100 : _model.Evaluate(state as State));
         }
-
         private void ModelCpuTurn(object sender, EventArgs eventArgs)
         {
             _model.Step(_ai.doAlphaBeta(this) as State);
@@ -57,9 +56,6 @@ namespace Grundy.View
         {
             MessageBox.Show("Játék vége, a nyertes: " + grundyWinEvenetArgs.WinnerPlayer.Name, "Játék vége!", MessageBoxButton.OK, MessageBoxImage.Asterisk);
         }
-        public void quitGame()
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
