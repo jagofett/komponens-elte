@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using ai;
 using Interfaces;
 
 namespace FrameWork.Model
@@ -25,7 +26,7 @@ namespace FrameWork.Model
         public void init()
         {
             PreLoad();
-
+            _ai = new Ai();
             games = new List<IGame>();
             Type igame = typeof(IGame);
             var types = AppDomain.CurrentDomain.GetAssemblies().

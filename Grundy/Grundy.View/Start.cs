@@ -35,7 +35,7 @@ namespace Grundy.View
 
         public List<object> GetNextStates(object actState)
         {
-            return new List<object> {_model.GetNextStates(actState as State)};
+            return _model == null ? null :  new List<object> {_model.GetNextStates(actState as State)};
         }
 
         public object GetState()

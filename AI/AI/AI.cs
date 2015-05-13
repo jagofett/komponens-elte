@@ -17,7 +17,7 @@ namespace ai
             return minimax(tree, 4, true, game);
         }
 
-        public Object doAlphabeta(IGame game)
+        public Object doAlphaBeta(IGame game)
         {
             GameTree<Object> gt = new GameTree<Object>(game.GetState());
             GameTree<Object> tree = makeGameTree(gt, game);
