@@ -106,6 +106,7 @@ namespace Grundy.Library.Model
             {
                 return false;
             }
+            GetNextStates();
             targetPile.Take(stackSize);
 
             _state.Piles.Insert(pileNumber, new Pile(stackSize));
@@ -149,7 +150,30 @@ namespace Grundy.Library.Model
 
         public List<State> GetNextStates()
         {
-            throw new NotImplementedException();
+            List<State> states = new List<State>();
+
+            foreach (Pile pile in _state.Piles)
+            {
+                int originalSize = pile.Size;
+                int currentSize = pile.Size;
+
+                while (originalSize > 2 && --currentSize > originalSize / 2)
+                {
+                    State tempState = new State(_state);
+                    foreach (Pile tempPile in tempState.Piles)
+                    {
+                        if (tempPile.Id == pile.Id)
+                        {
+                            tempPile.Take(currentSize);
+                            tempState.Piles.Add(new Pile(originalSize - (originalSize - currentSize)));
+                            states.Add(tempState);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return states;
         }
 
         public int Evaluate(State state)
