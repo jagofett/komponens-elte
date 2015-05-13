@@ -8,7 +8,7 @@ using Grundy.Interface;
 
 namespace Grundy.Library.Model
 {
-    public class State : IState
+    public class State
     {
 
         public List<Pile> Piles { get; private set; }

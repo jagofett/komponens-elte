@@ -5,12 +5,14 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace FrameWork.Model
 {
     class FrameModel
     {
         List<IGame> games;
+        private IAi _ai;
         int currentGame;
 
         public event EventHandler<GameAddedEventArgs> GameAdded;
@@ -49,7 +51,7 @@ namespace FrameWork.Model
             if (currentGame == -1)
             {
                 currentGame = i;
-                games[currentGame].newGame();
+                games[currentGame].StartGame(_ai);
             }
         }
 
@@ -57,7 +59,7 @@ namespace FrameWork.Model
         {
             if (currentGame != -1)
             {
-                games[currentGame].quitGame();
+                games[currentGame].QuitGame();
                 currentGame = -1;
             }
         }

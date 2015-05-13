@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using FrameWork.Model;
 using Grundy.Library.Model;
 using Grundy.Library.ViewModel;
+using Interfaces;
 
 namespace Grundy.View
 {
@@ -26,6 +26,26 @@ namespace Grundy.View
             _viewModel = new GrundyViewModel(_model);
             _view.DataContext = _viewModel;
             _view.Show();
+        }
+
+        public void QuitGame()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<object> GetNextStates(object actState)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object GetState()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Evaluate(object state)
+        {
+            throw new NotImplementedException();
         }
 
         private void ModelCpuTurn(object sender, EventArgs eventArgs)
