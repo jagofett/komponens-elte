@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace ai
 {
-    delegate void TreeVisitor<T>(T nodeData);
 
-    class GameTree<T> : IEnumerable
+    public class GameTree<T> : IEnumerable
     {
         private T data;
         private LinkedList<GameTree<T>> children;
@@ -48,12 +47,7 @@ namespace ai
             return children;
         }
 
-        public void Traverse(GameTree<T> node, TreeVisitor<T> visitor)
-        {
-            visitor(node.data);
-            foreach (GameTree<T> kid in node.children)
-                Traverse(kid, visitor);
-        }
+       
 
         public IEnumerator GetEnumerator()
         {
