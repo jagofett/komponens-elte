@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using TicTacToe.Model;
 using TicTacToe.ViewModel;
+using TicTacToeLibrary.ViewModel;
 
 namespace TicTacToe
 {
@@ -29,6 +30,8 @@ namespace TicTacToe
             _view = new MainWindow();
             _view.DataContext = _viewModel;
             _view.Show();
+
+            Testing test = new Testing();
         }
 
         private void GameEnded(object sender, TicTacToeViewModel.WinEventArgs e)
