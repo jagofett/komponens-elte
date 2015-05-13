@@ -1,10 +1,11 @@
-﻿using FrameWork.Model;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Interfaces;
 using TicTacToe.Model;
 using TicTacToe.ViewModel;
 
@@ -17,9 +18,10 @@ namespace TicTacToe
         private MainWindow _view;
         private string Player;
 
-        public void newGame()
-        {
-            _model = new Logic();
+        public void StartGame(IAi aiModule)
+		{
+			//use the aiModule to calculate the computer movements. (probably inject to logic!)
+			_model = new Logic();
 
             // nézemodell létrehozása
             _viewModel = new TicTacToeViewModel(_model);
@@ -44,11 +46,24 @@ namespace TicTacToe
             }
         }
 
-        public void quitGame()
+        public void QuitGame()
         {
             _view.Close();
         }
 
+	    public List<object> GetNextStates(object actState)
+	    {
+		    throw new NotImplementedException();
+	    }
 
+	    public object GetState()
+	    {
+		    throw new NotImplementedException();
+	    }
+
+	    public int Evaluate(object state)
+	    {
+		    throw new NotImplementedException();
+	    }
     }
 }

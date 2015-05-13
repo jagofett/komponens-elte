@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using FrameWork.Model;
 using Grundy.Library.Model;
 using Grundy.Library.ViewModel;
+using Interfaces;
 
 namespace Grundy.View
 {
@@ -15,8 +15,8 @@ namespace Grundy.View
         private GameLogic _model;
         private MainWindow _view;
         private GrundyViewModel _viewModel;
-        public void newGame()
-        {
+        public void StartGame(IAi aiModule)
+		{
             _model = new GameLogic();
             _model.GameEnd += ModelGameEnd;
             _view = new MainWindow();
@@ -29,9 +29,26 @@ namespace Grundy.View
         {
             MessageBox.Show("Játék vége, a nyertes: " + grundyWinEvenetArgs.WinnerPlayer.Name, "Játék vége!", MessageBoxButton.OK, MessageBoxImage.Asterisk);
         }
-        public void quitGame()
+
+
+	    public void QuitGame()
         {
             throw new NotImplementedException();
         }
+
+	    public List<object> GetNextStates(object actState)
+	    {
+		    return _model == null ? null : _model.GetNextStates(actState);
+	    }
+
+	    public object GetState()
+	    {
+		    return _model == null ? null : _model.GetState();
+	    }
+
+	    public int Evaluate(object state)
+	    {
+		    return _model == null ? -100 : _model.Evaluate(state);
+	    }
     }
 }

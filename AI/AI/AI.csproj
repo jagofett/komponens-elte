@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -36,16 +36,15 @@
   <ItemGroup>
     <Compile Include="AI.cs" />
     <Compile Include="GameTree.cs" />
-    <Compile Include="IAI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="FrameWork">
-      <HintPath>..\..\FrameWork\FrameWork\bin\Debug\FrameWork.exe</HintPath>
+    <Reference Include="Interfaces">
+      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Grundy">
-      <HintPath>..\..\komponens-elte\Grundy\Grundy\bin\Debug\Grundy.exe</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

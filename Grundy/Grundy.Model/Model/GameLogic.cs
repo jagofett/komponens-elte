@@ -4,13 +4,14 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Grundy.Interface;
+using Interfaces;
 
 namespace Grundy.Library.Model
 {
     public class GameLogic
     {
         private State _state;
+	    private IAi _ai;
         public bool IsStarted { get; private set; }
         private Player _playerOne;
         private Player _playerTwo;
@@ -57,8 +58,9 @@ namespace Grundy.Library.Model
             }
         }
 
-        public GameLogic()
+        public GameLogic(IAi aiModule = null)
         {
+	        _ai = aiModule;
             IsStarted = false;
         }
 
@@ -147,13 +149,15 @@ namespace Grundy.Library.Model
             return _state;
         }
 
-        public List<State> GetNextStates()
+        public List<Object> GetNextStates(Object startStateObj)
         {
+	        var startState = startStateObj as State;
             throw new NotImplementedException();
         }
 
-        public int Evaluate(State state)
+        public int Evaluate(Object stateObject)
         {
+	        var state = stateObject as State;
             throw new NotImplementedException();
         }
 
