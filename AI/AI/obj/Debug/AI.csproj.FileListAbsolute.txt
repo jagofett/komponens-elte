@@ -8,3 +8,10 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\Interfa
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\AI.csprojResolveAssemblyReference.cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\ai.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\ai.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\ai.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\ai.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\Interfaces.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\Interfaces.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\AI.csprojResolveAssemblyReference.cache
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\ai.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\ai.pdb

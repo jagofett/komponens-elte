@@ -50,10 +50,6 @@ E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\ob
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.pdb
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\FrameWork.exe
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\FrameWork.pdb
-E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.exe
-E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.dll
-E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.pdb
-E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.pdb
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.csprojResolveAssemblyReference.cache
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\View\MainWindow.baml
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\View\MainWindow.g.cs
@@ -116,3 +112,11 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.View.exe
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.View.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.pdb

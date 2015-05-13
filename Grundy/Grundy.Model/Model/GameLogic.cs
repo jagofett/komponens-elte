@@ -67,7 +67,32 @@ namespace Grundy.Library.Model
         public GameLogic()
         {
             IsStarted = false;
+           
         }
+
+   
+
+        private void MakeCpuMove()
+        {
+            var nextStates = GetNextStates(GetState());
+            State selectState = null;
+            foreach (var nextStateObj in nextStates)
+            {
+                var nextState = nextStateObj as State;
+                var value = Evaluate(nextState);
+                if (value == 1)
+                {
+                    selectState = nextState;
+                }
+            }
+            if (selectState == null)
+            {
+                //no winning strategy. select the first var.
+                selectState = nextStates.First() as State;
+            }
+            Step(selectState);
+        }
+
 
         public void Start(int size, GameType type)
         {
@@ -121,11 +146,18 @@ namespace Grundy.Library.Model
             _state.Piles.Insert(pileNumber, new Pile(stackSize));
 
 
-            _state.ActPlayer = ActPlayer.Id == _playerOne.Id ? _playerTwo : _playerOne;
             CheckGameOver();
             if (IsStarted)
             {
+                _state.ActPlayer = ActPlayer.Id == _playerOne.Id ? _playerTwo : _playerOne;
+
                 OnPlayerChange();
+                if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
+                {
+                    OnCpuTurn();
+                    //debug cpu turn.
+                    //MakeCpuMove();
+                }
             }
             return true;
         }

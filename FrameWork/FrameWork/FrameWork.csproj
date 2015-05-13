@@ -38,6 +38,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\AI\AI\bin\Debug\ai.dll</HintPath>
     </Reference>
+    <Reference Include="Grundy.View, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Grundy\Grundy.View\bin\Debug\Grundy.View.exe</HintPath>
+    </Reference>
     <Reference Include="Interfaces">
       <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
     </Reference>

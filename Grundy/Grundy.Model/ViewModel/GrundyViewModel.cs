@@ -75,6 +75,14 @@ namespace Grundy.Library.ViewModel
             get { return !IsStarted; }
         }
 
+        public EventHandler<GrundyWinEvenetArgs>  GameEndEvent { get; set; }
+        private void OnGameEnd(Player winner)
+        {
+            if (GameEndEvent != null)
+            {
+                GameEndEvent(this, new GrundyWinEvenetArgs(winner));
+            }
+        }
         #region Constructors
 
         public GrundyViewModel(GameLogic logic)
@@ -150,6 +158,7 @@ namespace Grundy.Library.ViewModel
             {
                 Info = " Hibás lépés!";
             }
+
         }
 
         private void GameEnd(object sender, GrundyWinEvenetArgs eventArgs)
@@ -157,13 +166,20 @@ namespace Grundy.Library.ViewModel
             FieldUpdate();
             Info = "Játék vége, a nyertes: " + eventArgs.WinnerPlayer.Name;
             OnPropertyChanged("ButtonEnabled");
-
+            OnGameEnd(eventArgs.WinnerPlayer);
         }
-        private void PlayerChange(object sender, EventArgs eventArgs)
+        private async void PlayerChange(object sender, EventArgs eventArgs)
         {
-            FieldUpdate();
             ActPlayer = _gameLogic.ActPlayer;
+            if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
+            {
+                //sleep to view cpu-s
+            }
+
+                FieldUpdate();                
+           
             Info = ActPlayer.Name + "következik!";
+
         }
 
         #endregion
