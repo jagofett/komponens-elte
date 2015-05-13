@@ -9,11 +9,19 @@ namespace Grundy.Library.Model
     public class Pile
     {
         public int Size { get; private set; }
-        //public int Id { get; private set; }
+        public int Id { get; private set; }
+        static int nextId;
 
-        public Pile(int size) 
+        public Pile(int size)
         {
             Size = size;
+            Id = ++nextId;
+        }
+
+        public Pile(int size, int id)
+        {
+            Size = size;
+            Id = id;
         }
 
 

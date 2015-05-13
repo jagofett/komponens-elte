@@ -33,6 +33,7 @@ namespace Grundy.Library.Model
         public EventHandler GameStart;
         public EventHandler<GrundyWinEvenetArgs> GameEnd;
         public EventHandler PlayerChange;
+        public EventHandler CpuTurn;
 
         private void OnGameStart()
         {
@@ -41,7 +42,13 @@ namespace Grundy.Library.Model
                 GameStart(this, new EventArgs());
             }
         }
-
+        private void OnCpuTurn()
+        {
+            if (CpuTurn != null)
+            {
+                CpuTurn(this, new EventArgs());
+            }
+        }
         private void OnGameEnd(Player winner)
         {
             if (GameEnd != null)
@@ -106,6 +113,7 @@ namespace Grundy.Library.Model
             {
                 return false;
             }
+            //GetNextStates();
             targetPile.Take(stackSize);
 
             _state.Piles.Insert(pileNumber, new Pile(stackSize));
@@ -147,9 +155,32 @@ namespace Grundy.Library.Model
             return _state;
         }
 
-        public List<State> GetNextStates()
+        public List<object> GetNextStates(State startState)
         {
-            throw new NotImplementedException();
+            var states = new List<object>();
+
+            foreach (Pile pile in startState.Piles)
+            {
+                int originalSize = pile.Size;
+                int currentSize = pile.Size;
+
+                while (originalSize > 2 && --currentSize > originalSize / 2)
+                {
+                    State tempState = new State(startState);
+                    foreach (Pile tempPile in tempState.Piles)
+                    {
+                        if (tempPile.Id == pile.Id)
+                        {
+                            tempPile.Take(currentSize);
+                            tempState.Piles.Add(new Pile(originalSize - (originalSize - currentSize)));
+                            states.Add(tempState);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return states;
         }
 
         public int Evaluate(State state)
