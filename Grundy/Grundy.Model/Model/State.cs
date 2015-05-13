@@ -4,11 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Grundy.Interface;
+
 
 namespace Grundy.Library.Model
 {
-    public class State : IState
+    public class State 
     {
         
         public List<Pile> Piles { get; private set; }

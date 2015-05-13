@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FrameWork">
-      <HintPath>..\..\FrameWork\FrameWork\bin\Debug\FrameWork.exe</HintPath>
+    <Reference Include="Interfaces">
+      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -98,10 +98,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Grundy.Interface\Grundy.Interface.csproj">
-      <Project>{e608825f-0906-4f0b-97c7-9be79c213262}</Project>
-      <Name>Grundy.Interface</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Grundy.Model\Grundy.Library.csproj">
       <Project>{db5f7479-9677-453d-bf6d-9f4f927a6ed9}</Project>
       <Name>Grundy.Library</Name>
