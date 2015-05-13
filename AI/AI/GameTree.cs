@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,13 +19,20 @@ namespace ai
         {
             this.data = data;
             children = new LinkedList<GameTree<T>>();
-            depth = 1;
+            //depth = 1;
         }
 
         public void AddChild(T data)
         {
             children.AddFirst(new GameTree<T>(data));
-            depth += 1;
+           // depth += 1;
+        }
+
+        public void AddChildren(List<T> ch){
+            foreach (T t in ch)
+            {
+                AddChild(t);
+            }
         }
 
         public GameTree<T> GetChild(int i)
@@ -34,6 +41,11 @@ namespace ai
                 if (--i == 0)
                     return n;
             return null;
+        }
+
+        public LinkedList<GameTree<T>> GetChildren()
+        {
+            return children;
         }
 
         public void Traverse(GameTree<T> node, TreeVisitor<T> visitor)
