@@ -4,7 +4,6 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Grundy.Interface;
 
 namespace Grundy.Library.Model
 {
@@ -14,6 +13,7 @@ namespace Grundy.Library.Model
         public bool IsStarted { get; private set; }
         private Player _playerOne;
         private Player _playerTwo;
+        private Dictionary<int, int> values = new Dictionary<int, int>();
 
         public Player ActPlayer
         {
@@ -72,6 +72,8 @@ namespace Grundy.Library.Model
         public void Start(int size, GameType type)
         {
             _state = new State(size, type);
+            calculateGrundyValues(size);
+
             switch (type)
             {
                 case GameType.PvP:
@@ -185,7 +187,48 @@ namespace Grundy.Library.Model
 
         public int Evaluate(State state)
         {
-            throw new NotImplementedException();
+            int value = 0;
+
+            foreach (Pile p in state.Piles)
+            {
+                value ^= values[p.Size];
+            }
+
+            if (value == 0) //Winning move
+                return 1;
+            else //Hopefully the opponent makes a mistake
+                return 0;
+        }
+
+        //Transform the nim values, according to the rules of Grundy's game
+        private void calculateGrundyValues(int size)
+        {
+            List<int> list;
+            values[0] = 0;
+
+            //Count grundy value for every possible pile
+            for (int i = 1; i < size; ++i)
+            {
+                list = new List<int>();
+                list.Add(values[i - 1]);
+
+                for (int j = 2; j * 2 < i; ++j)
+                {
+                    list.Add(values[i - j]);
+                }
+
+                values[i] = mex(list);
+            }
+        }
+
+        //Returns the minimum excluded non negative integer
+        private int mex(List<int> list)
+        {
+            for (int i = 0; ; ++i)
+            {
+                if (!list.Contains(i))
+                    return i;
+            }
         }
 
     }
