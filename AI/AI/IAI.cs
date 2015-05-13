@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Grundy.Interface;
-
+using FrameWork.Model;
 namespace ai
 {
     interface IAI
     {
-        int doMinimax(IGameModel game);
-        int doAlphaBeta(IGameModel game);
+        int doMinimax(IGame game);
+        int doAlphaBeta(IGame game);
     }
 }
 
