@@ -10,6 +10,10 @@ namespace ai
     public class Ai : IAi
     {
 
+        public Ai()
+        {
+
+        }
         public Object doMinimax(IGame game)
         {
             GameTree<Object> gt = new GameTree<Object>(game.GetState());
@@ -24,7 +28,7 @@ namespace ai
             return alphaBeta(tree,4, -1000, 1000, true, game);
         }
 
-        private GameTree<Object> makeGameTree(GameTree<Object> gt, IGame game)
+        public GameTree<Object> makeGameTree(GameTree<Object> gt, IGame game)
         {
 
 
