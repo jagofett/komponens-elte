@@ -15,14 +15,22 @@ namespace Grundy.View
         private GameLogic _model;
         private MainWindow _view;
         private GrundyViewModel _viewModel;
+        private IAi _ai;
         public void StartGame(IAi aiModule)
-		{
+        {
+            _ai = aiModule;
             _model = new GameLogic();
             _model.GameEnd += ModelGameEnd;
+            _model.CpuTurn += ModelCpuTurn;
             _view = new MainWindow();
             _viewModel = new GrundyViewModel(_model);
             _view.DataContext = _viewModel;
             _view.Show();
+        }
+
+        private void ModelCpuTurn(object sender, EventArgs eventArgs)
+        {
+            _model.Step(_ai.doAlphaBeta(this) as State);
         }
 
         private void ModelGameEnd(object sender, GrundyWinEvenetArgs grundyWinEvenetArgs)

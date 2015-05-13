@@ -34,6 +34,7 @@ namespace Grundy.Library.Model
         public EventHandler GameStart;
         public EventHandler<GrundyWinEvenetArgs> GameEnd;
         public EventHandler PlayerChange;
+        public EventHandler CpuTurn;
 
         private void OnGameStart()
         {
@@ -42,7 +43,13 @@ namespace Grundy.Library.Model
                 GameStart(this, new EventArgs());
             }
         }
-
+        private void OnCpuTurn()
+        {
+            if (CpuTurn != null)
+            {
+                CpuTurn(this, new EventArgs());
+            }
+        }
         private void OnGameEnd(Player winner)
         {
             if (GameEnd != null)
