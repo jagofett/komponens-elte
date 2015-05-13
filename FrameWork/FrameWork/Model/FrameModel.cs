@@ -5,7 +5,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using ai;
 using Interfaces;
 
 namespace FrameWork.Model
@@ -13,8 +12,8 @@ namespace FrameWork.Model
     class FrameModel
     {
         List<IGame> games;
+        private IAi _ai;
         int currentGame;
-	    private readonly IAi _ai = new Ai();
 
         public event EventHandler<GameAddedEventArgs> GameAdded;
         
@@ -52,7 +51,6 @@ namespace FrameWork.Model
             if (currentGame == -1)
             {
                 currentGame = i;
-				//inject ai for all games.
                 games[currentGame].StartGame(_ai);
             }
         }

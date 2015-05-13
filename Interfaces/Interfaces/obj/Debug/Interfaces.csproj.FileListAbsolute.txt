@@ -1,0 +1,4 @@
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.pdb

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using FrameWork.Model;
 using Grundy.Library.Model;
 using Grundy.Library.ViewModel;
+using Interfaces;
 
 namespace Grundy.View
 {
@@ -28,6 +28,25 @@ namespace Grundy.View
             _view.Show();
         }
 
+        public void QuitGame()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<object> GetNextStates(object actState)
+        {
+            return new List<object> {_model.GetNextStates(actState as State)};
+        }
+
+        public object GetState()
+        {
+            return _model == null ? null : _model.GetState();
+        }
+
+        public int Evaluate(object state)
+        {
+            return (int) (_model == null ? -100 : _model.Evaluate(state as State));
+        }
         private void ModelCpuTurn(object sender, EventArgs eventArgs)
         {
             _model.Step(_ai.doAlphaBeta(this) as State);
@@ -37,9 +56,6 @@ namespace Grundy.View
         {
             MessageBox.Show("Játék vége, a nyertes: " + grundyWinEvenetArgs.WinnerPlayer.Name, "Játék vége!", MessageBoxButton.OK, MessageBoxImage.Asterisk);
         }
-        public void quitGame()
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
