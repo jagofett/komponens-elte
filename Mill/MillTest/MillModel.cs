@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MillTest
 {
-    class MillModel
+    public class MillModel
     {
         private int _currentPlayer;
         private Player[] _players;

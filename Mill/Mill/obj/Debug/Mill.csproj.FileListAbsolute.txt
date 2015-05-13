@@ -1,0 +1,15 @@
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\bin\Debug\Mill.exe.config
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\bin\Debug\Mill.exe
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\bin\Debug\Mill.pdb
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\MainWindow.baml
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\MainWindow.g.cs
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\App.g.cs
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\Mill_MarkupCompile.cache
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\Mill.g.resources
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\Mill.Properties.Resources.resources
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\Mill.csproj.GenerateResource.Cache
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\Mill.exe
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\Mill.pdb
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\obj\Debug\Mill.csprojResolveAssemblyReference.cache
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\bin\Debug\MillTest.dll
+E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\bin\Debug\MillTest.pdb

@@ -1,0 +1,5 @@
+E:\ELTE\KOMPONENS\komponens-elte\Mill\MillTest\bin\Debug\MillTest.dll
+E:\ELTE\KOMPONENS\komponens-elte\Mill\MillTest\bin\Debug\MillTest.pdb
+E:\ELTE\KOMPONENS\komponens-elte\Mill\MillTest\obj\Debug\MillTest.csprojResolveAssemblyReference.cache
+E:\ELTE\KOMPONENS\komponens-elte\Mill\MillTest\obj\Debug\MillTest.dll
+E:\ELTE\KOMPONENS\komponens-elte\Mill\MillTest\obj\Debug\MillTest.pdb
