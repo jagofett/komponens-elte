@@ -35,7 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Interfaces">
+      <HintPath>..\..\Interfaces\Interfaces\bin\Debug\Interfaces.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="TicTacToeLibrary">
+      <HintPath>..\..\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,7 +56,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AiUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>
