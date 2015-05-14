@@ -21,9 +21,8 @@ namespace ai
             //depth = 1;
         }
 
-        public bool IsTerminate()
-        {
-            return children.Count == 0;
+        public Boolean IsTerminal(){
+            return children.Count()==0;
         }
 
         public void AddChild(T data)
