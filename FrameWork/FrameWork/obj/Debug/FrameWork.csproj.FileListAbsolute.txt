@@ -107,7 +107,6 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.Properties.Resources.resources
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.dll
-d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.pdb
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.dll
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.View.exe
 E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.dll
@@ -141,3 +140,4 @@ C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.dll
 C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.dll
 C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.dll
 C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.dll
