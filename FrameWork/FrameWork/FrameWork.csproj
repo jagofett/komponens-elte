@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Model\FrameModel.cs" />
     <Compile Include="Model\GameAddedEventArgs.cs" />
+    <Compile Include="Model\GameMock.cs" />
     <Compile Include="ViewModel\DelegateCommand.cs" />
     <Compile Include="ViewModel\FrameViewModel.cs" />
     <Compile Include="ViewModel\GameButton.cs" />
