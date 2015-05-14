@@ -28,3 +28,5 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mil
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mill.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mill.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mill.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Interfaces.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Interfaces.pdb

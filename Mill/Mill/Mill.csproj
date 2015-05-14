@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Interfaces\Interfaces\Interfaces.csproj">
+      <Project>{60a0dfef-d376-4506-ba66-f7aa285a205d}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MillTest\MillTest.csproj">
       <Project>{646a0dba-d1a6-4ecd-8eb7-8510d2981f91}</Project>
       <Name>MillTest</Name>
