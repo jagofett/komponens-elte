@@ -113,13 +113,13 @@ namespace ai
             if (maximizingPlayer)
             {
                 int v = -10000;
-                Object bestState = (Object)new Object();
+                Object bestState = null;
                 foreach (GameTree<Object> child in node)
                 {
                     Object tmp = alphaBeta(child, depth - 1, alpha, beta, false, game);
                     //v = Math.Max(game.Evaluate(bestState), game.Evaluate(tmp));
                     int t = game.Evaluate(tmp);
-                    if (game.Evaluate(bestState) < t)
+                    if (bestState == null || game.Evaluate(bestState) < t)
                     {
                         v = t;
                         bestState = tmp;
@@ -137,13 +137,13 @@ namespace ai
             else
             {
                 int v = 1000;
-                Object bestState = (Object)new Object();
+                Object bestState = null;
                 foreach (GameTree<Object> child in node)
                 {
                     Object tmp = alphaBeta(child, depth - 1, alpha, beta, false, game);
                     int t = game.Evaluate(tmp);
                     //v = Math.Min(v, alphaBeta(child, depth - 1, alpha, beta, true, game));
-                    if (game.Evaluate(bestState) > t)
+                    if (bestState == null ||  game.Evaluate(bestState) > t)
                     {
                         v = t;
                         bestState = tmp;

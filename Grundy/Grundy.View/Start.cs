@@ -24,7 +24,10 @@ namespace Grundy.View
             _view = new MainWindow();
             _viewModel = new GrundyViewModel(_model);
             _viewModel.GameEndEvent += ModelGameEnd;
-            _view.DataContext = _viewModel;
+			//message display event:
+	        _viewModel.InfoEvent += (sender, args) => MessageBox.Show(args.Text);
+
+			_view.DataContext = _viewModel;
             _view.Closing += _view_Closing;
 
             _view.Show();
@@ -56,16 +59,18 @@ namespace Grundy.View
         }
         private void ModelCpuTurn(object sender, EventArgs eventArgs)
         {
-            State step;
-            if (_ai == null)
-            {
-                step = GetNextStates(GetState()).First() as State;
-            }
-            else
+			var defStep = GetNextStates(GetState()).First() as State;
+	        var step = defStep;
+			if (_ai != null)
             {
                 step = _ai.doAlphaBeta(this) as State;
             }
-            _model.Step(step);
+	        if (!_model.Step(step))
+	        {
+		        MessageBox.Show("Hibás AI lépés! Az első lehetséges lépés próbálása...");
+				//try to step the first available step.
+		        _model.Step(defStep);
+	        }
         }
 
         private void ModelGameEnd(object sender, GrundyWinEvenetArgs grundyWinEvenetArgs)

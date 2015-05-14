@@ -4,6 +4,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 
 namespace Grundy.Library.Model
 {
@@ -60,7 +61,7 @@ namespace Grundy.Library.Model
         {
             if (PlayerChange != null)
             {
-                PlayerChange(this, new EventArgs());
+                PlayerChange.Invoke(this, new EventArgs());
             }
         }
 
@@ -90,7 +91,9 @@ namespace Grundy.Library.Model
                 //no winning strategy. select the first var.
                 selectState = nextStates.First() as State;
             }
-            Step(selectState);
+			
+				Step(selectState);
+
         }
 
 
@@ -111,12 +114,13 @@ namespace Grundy.Library.Model
                     break;
                 case GameType.CvC:
                     _playerOne = new Player { Name = "CPU 1", PlayerType = PlayerType.ComputerPlayer };
-                    _playerTwo = new Player { Name = "CPU 1", PlayerType = PlayerType.ComputerPlayer };
+                    _playerTwo = new Player { Name = "CPU 2", PlayerType = PlayerType.ComputerPlayer };
                     break;
             }
             IsStarted = true;
             _state.ActPlayer = _playerOne;
             OnGameStart();
+			CheckCpuTurn();
         }
 
         private void CheckGameOver()
@@ -152,18 +156,26 @@ namespace Grundy.Library.Model
                 _state.ActPlayer = ActPlayer.Id == _playerOne.Id ? _playerTwo : _playerOne;
 
                 OnPlayerChange();
-                if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
-                {
-                    OnCpuTurn();
-                    //debug cpu turn.
-                    //MakeCpuMove();
-                }
+	            CheckCpuTurn();
             }
             return true;
         }
 
+	    private void CheckCpuTurn()
+	    {
+			if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
+			{
+				//OnCpuTurn();
+				//debug cpu turn.
+				MakeCpuMove();
+			}
+		}
         public bool Step(State newState)
         {
+	        if (newState == null)
+	        {
+		        return false;
+	        }
             //check if state is valid next step. (only pile is relevant)
             var newPile = newState.Piles;
             var curList = _state.Piles;
@@ -192,7 +204,10 @@ namespace Grundy.Library.Model
         public List<object> GetNextStates(State startState)
         {
             var states = new List<object>();
-
+	        if (startState == null)
+	        {
+		        return null;
+	        }
             foreach (Pile pile in startState.Piles)
             {
                 int originalSize = pile.Size;
@@ -220,7 +235,10 @@ namespace Grundy.Library.Model
         public int Evaluate(State state)
         {
             int value = 0;
-
+	        if (state == null)
+	        {
+		        return 0;
+	        }
             foreach (Pile p in state.Piles)
             {
                 value ^= values[p.Size];
@@ -281,4 +299,14 @@ namespace Grundy.Library.Model
             WinnerPlayer = winner;
         }
     }
+
+	public class StringEventArgs : EventArgs
+	{
+		public string Text { get; set; }
+
+		public StringEventArgs(string text	)
+		{
+			Text = text;
+		}
+	}
 }

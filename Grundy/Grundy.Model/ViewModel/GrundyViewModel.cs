@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -83,9 +84,19 @@ namespace Grundy.Library.ViewModel
                 GameEndEvent(this, new GrundyWinEvenetArgs(winner));
             }
         }
-        #region Constructors
 
-        public GrundyViewModel(GameLogic logic)
+	    public EventHandler<StringEventArgs> InfoEvent { get; set; }
+		private void OnInfoText(string info)
+		{
+			if (InfoEvent != null)
+			{
+				InfoEvent(this, new StringEventArgs(info));
+			}
+		}
+
+		#region Constructors
+
+		public GrundyViewModel(GameLogic logic)
         {
             _gameLogic = logic;
             _gameLogic.GameStart += GameStart;
@@ -125,9 +136,10 @@ namespace Grundy.Library.ViewModel
 
         private void FieldUpdate()
         {
+			
             if (Elements != null)
             {
-                _Elements.Clear();
+                //_Elements.Clear();
                 OnPropertyChanged("Elements");
             }
             OnPropertyChanged("PileCount");
@@ -152,7 +164,7 @@ namespace Grundy.Library.ViewModel
 
         private void StepCommand(int id)
         {
-            if (!IsStarted) return;
+            if (!IsStarted || ActPlayer.PlayerType == PlayerType.ComputerPlayer) return;
             var elem = Elements[id];
             if (!_gameLogic.Step(elem.X, elem.Y + 1))
             {
@@ -171,16 +183,17 @@ namespace Grundy.Library.ViewModel
         private async void PlayerChange(object sender, EventArgs eventArgs)
         {
             ActPlayer = _gameLogic.ActPlayer;
-            if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
-            {
-                //sleep to view cpu-s
-            }
+            
 
                 FieldUpdate();                
            
-            Info = ActPlayer.Name + "következik!";
-
-        }
+            Info = ActPlayer.Name + " következik!";
+			if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
+			{
+				//sleep to view cpu-s
+				OnInfoText(Info);
+			}
+		}
 
         #endregion
 
