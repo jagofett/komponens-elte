@@ -13,9 +13,6 @@ namespace MillTest.ViewModel
 
         private MillModel _model;
 
-        int xFrom=-1;
-        int yFrom=-1;
-
         private string _Dummy00;
         public string Dummy00
         {
@@ -42,11 +39,45 @@ namespace MillTest.ViewModel
             }
         }
 
+        private bool _PP;
+        public bool PP
+        {
+            get { return _PP; }
+            set
+            {
+                _PP = value;
+                OnPropertyChanged("PP");
+            }
+        }
+
+        private bool _PC;
+        public bool PC
+        {
+            get { return _PC; }
+            set
+            {
+                _PC = value;
+                OnPropertyChanged("PC");
+            }
+        }
+
+        private bool _CC;
+        public bool CC
+        {
+            get { return _CC; }
+            set
+            {
+                _CC = value;
+                OnPropertyChanged("CC");
+            }
+        }
+
         #endregion
 
         #region DelegateCommands
 
         public DelegateCommand MillStepCommand { get; set; }
+        public DelegateCommand PlayerChangedCommand { get; set; }
 
         #endregion
 
@@ -54,6 +85,11 @@ namespace MillTest.ViewModel
         public MillViewModel(MillModel model)
         {
             _model = model;
+
+            PP = true;
+            PC = false;
+            CC = false;
+            PlayerChangedCommand = new DelegateCommand(PlayerSettingsChanged);
             Elements = new ObservableCollection<ViewElement>();
             Elements.Add(new ViewElement()
             {
@@ -287,8 +323,8 @@ namespace MillTest.ViewModel
             String[] fieldSplit = field.Split(',');
             int x = int.Parse(fieldSplit[0]);
             int y = int.Parse(fieldSplit[1]);
-            Console.WriteLine(_model.CurrentPlayer+": "+ _model.Players[_model.CurrentPlayer].AllTokens + "  --  " + _model.Players[_model.CurrentPlayer].OnTableTokens + " --- " + _model.Players[_model.CurrentPlayer].LostTokens);
-            Console.WriteLine(_model.CurrentPlayer+": "+_model.LastStep + " -- " + x + " : " + y);
+            //Console.WriteLine(_model.CurrentPlayer+": "+ _model.Players[_model.CurrentPlayer].AllTokens + "  --  " + _model.Players[_model.CurrentPlayer].OnTableTokens + " --- " + _model.Players[_model.CurrentPlayer].LostTokens);
+            //Console.WriteLine(_model.CurrentPlayer+": "+_model.LastStep + " -- " + x + " : " + y);
             fieldSplit = _model.LastStep.Split(',');
             int xFrom = int.Parse(fieldSplit[0]);
             int yFrom = int.Parse(fieldSplit[1]);
@@ -375,6 +411,31 @@ namespace MillTest.ViewModel
                     
                 }
             }
+        }
+
+        private void PlayerSettingsChanged(object obj)
+        {
+            String player = (String)obj;
+            switch (player)
+            {
+                case "PP":
+                    PP = true;
+                    PC = false;
+                    CC = false;
+                    break;
+                case "PC":
+                    PP = false;
+                    PC = true;
+                    CC = false;
+                    break;
+                case "CC":
+                    PP = false;
+                    PC = false;
+                    CC = true;
+                    break;
+                default: break;
+            }
+          
         }
 
         #endregion

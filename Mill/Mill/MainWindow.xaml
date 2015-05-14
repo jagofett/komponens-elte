@@ -3,7 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="650" Width="650" MaxWidth="650" MaxHeight="650" MinHeight="650" MinWidth="650">
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Width="500" Height="500" VerticalAlignment="Center" Stroke="Black"/>
+            <Menu  IsMainMenu="True"  VerticalAlignment="Top">
+                <MenuItem Header="Players">
+                    <MenuItem Header="Player vs Player" IsChecked="{Binding PP}" Command="{Binding PlayerChangedCommand}" CommandParameter="PP"/>
+                    <MenuItem Header="Player vs CPU" IsChecked="{Binding PC}" Command="{Binding PlayerChangedCommand}" CommandParameter="PC"/>
+                    <MenuItem Header="CPU vs CPU" IsChecked="{Binding CC}" Command="{Binding PlayerChangedCommand}" CommandParameter="CC"/>
+                </MenuItem>
+            </Menu>
+          <Rectangle HorizontalAlignment="Center" Width="500" Height="500" VerticalAlignment="Center" Stroke="Black"/>
         <Rectangle HorizontalAlignment="Center" Width="350" Height="350" VerticalAlignment="Center" Stroke="Black"/>
         <Rectangle HorizontalAlignment="Center" Width="200" Height="200" VerticalAlignment="Center" Stroke="Black"/>
         <Line X1="318" Y1="56" X2="318" Y2="207"  Stroke="Black" />
