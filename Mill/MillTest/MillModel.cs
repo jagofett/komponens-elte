@@ -12,7 +12,7 @@ namespace MillTest
         private Field[,] _gameTable;
         private String _lastStep;
         private Boolean _mill;
-        private Evaluate eval;
+       // private Evaluate eval;
 
 
         public int CurrentPlayer
@@ -37,7 +37,7 @@ namespace MillTest
 
         public MillModel()
         {
-            eval = new Evaluate();
+         //   eval = new Evaluate();
             _currentPlayer = 0;
             _players = new Player[2];
             for (int i = 0; i < 2; ++i )
@@ -46,7 +46,7 @@ namespace MillTest
             }
             _gameTable = new Field[7, 7];
             InitializeGameTable(_gameTable);
-           
+            _lastStep = "3,3";
 
 
         }
@@ -148,7 +148,7 @@ namespace MillTest
             int i = 0;
             if(row == 3 && column > 3)
                 i = 4;
-            while (isMill && i < 6 && (i != 3 || row != 3))
+            while (isMill && i <= 6 && (i != 3 || row != 3))
             {
                 isMill = GameTable[row, i] == Field.Invalid || GameTable[row, i] == GameTable[row, column];
                 ++i;
@@ -162,7 +162,7 @@ namespace MillTest
             int i = 0;
             if (column == 3 && row > 3)
                 i = 4;
-            while (isMill && i < 6 && (i != 3 || column != 3))
+            while (isMill && i <= 6 && (i != 3 || column != 3))
             {
                 isMill = GameTable[i, column] == Field.Invalid || GameTable[i, column] == GameTable[row, column];
                 ++i;
@@ -293,8 +293,8 @@ namespace MillTest
 
         public void NextStep(int row, int col, int player)
         {
-            eval.SetStep(row, col, player);
-            Console.WriteLine("model: "+eval.GetValue(_gameTable));
+           /* eval.SetStep(row, col, player);
+            Console.WriteLine("model: "+eval.GetValue(_gameTable));*/
         }
 
 

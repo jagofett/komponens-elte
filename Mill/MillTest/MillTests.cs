@@ -29,6 +29,15 @@ namespace MillTest
         }
 
         [TestMethod]
+        public void Random()
+        {
+            testObject.GameTable[0, 0] = Field.Player1;
+            testObject.GameTable[1, 1] = Field.Player2;
+            testObject.GameTable[0, 3] = Field.Player1;
+            Assert.IsFalse(testObject.IsInMill(0, 3));
+        }
+
+        [TestMethod]
         public bool CheckMillModelGameTable( Field[,] gameTable)
         {
             if (gameTable[0, 0] != Field.Empty)
