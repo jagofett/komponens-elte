@@ -35,12 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ai">
+      <HintPath>..\..\AI\AI\bin\Debug\ai.dll</HintPath>
+    </Reference>
     <Reference Include="Interfaces">
       <HintPath>..\..\Interfaces\Interfaces\bin\Debug\Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="TicTacToeLibrary">
-      <HintPath>..\..\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll</HintPath>
+      <HintPath>..\..\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>

@@ -2,3 +2,8 @@ E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacTo
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.pdb
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.dll
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.csprojResolveAssemblyReference.cache
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.pdb

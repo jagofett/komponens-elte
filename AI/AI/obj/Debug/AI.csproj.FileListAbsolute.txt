@@ -1,6 +1,3 @@
-D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\obj\Debug\AI.csprojResolveAssemblyReference.cache
-D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\obj\Debug\ai.dll
-D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\obj\Debug\ai.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\ai.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\ai.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\Interfaces.dll
@@ -8,3 +5,9 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\bin\Debug\Interfa
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\AI.csprojResolveAssemblyReference.cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\ai.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\AI\AI\obj\Debug\ai.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\bin\Debug\ai.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\bin\Debug\ai.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\bin\Debug\Interfaces.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\bin\Debug\Interfaces.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\obj\Debug\ai.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\AI\AI\obj\Debug\ai.pdb

@@ -16,3 +16,21 @@ E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.Prope
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.Cache
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.exe
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe.config
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.exe
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToe.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\bin\Release\Interfaces.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToeLibrary.dll
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToeLibrary.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\bin\Release\Interfaces.pdb
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.csprojResolveAssemblyReference.cache
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\MainWindow.g.cs
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\App.g.cs
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe_MarkupCompile.cache
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe_MarkupCompile.lref
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\MainWindow.baml
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.g.resources
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.Properties.Resources.resources
+D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.Cache
