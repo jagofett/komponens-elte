@@ -34,10 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interfaces, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -99,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Interfaces\Interfaces\Interfaces.csproj">
+      <Project>{60a0dfef-d376-4506-ba66-f7aa285a205d}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Grundy.Model\Grundy.Library.csproj">
       <Project>{db5f7479-9677-453d-bf6d-9f4f927a6ed9}</Project>
       <Name>Grundy.Library</Name>

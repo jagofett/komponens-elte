@@ -30,3 +30,7 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\ai.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\ai.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.pdb

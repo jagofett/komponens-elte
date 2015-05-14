@@ -141,3 +141,7 @@ C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.dl
 C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.dll
 C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.View.exe
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.View.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.pdb
