@@ -90,6 +90,7 @@ namespace MillTest
             }
         }
 
+
         public bool PlaceToken(int row, int column)
         {
             if (GameTable[row, column] == Field.Empty && RemainingTokens(CurrentPlayer) > 0)

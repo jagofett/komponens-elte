@@ -271,11 +271,9 @@ namespace MillTest.ViewModel
                 Dummy = -1,
                 MillStepCommand = new DelegateCommand(MillFieldChosen)
             });
-          //  _model.PlaceToken(0, 1);
-
-
-            //így lehet hivatkozni mondjuk az aktuális elemre
-            //_model.CurrentPlayer;
+            _model.Mill = false;
+            _model.LastStep = "3,3";
+  
 
         }
 
@@ -289,10 +287,23 @@ namespace MillTest.ViewModel
             String[] fieldSplit = field.Split(',');
             int x = int.Parse(fieldSplit[0]);
             int y = int.Parse(fieldSplit[1]);
-            Console.WriteLine(_model.Players[_model.CurrentPlayer].AllTokens + "  --  " + _model.Players[_model.CurrentPlayer].OnTableTokens + " --- " + _model.Players[_model.CurrentPlayer].LostTokens);
+            Console.WriteLine(_model.CurrentPlayer+": "+ _model.Players[_model.CurrentPlayer].AllTokens + "  --  " + _model.Players[_model.CurrentPlayer].OnTableTokens + " --- " + _model.Players[_model.CurrentPlayer].LostTokens);
+            Console.WriteLine(_model.CurrentPlayer+": "+_model.LastStep + " -- " + x + " : " + y);
+            fieldSplit = _model.LastStep.Split(',');
+            int xFrom = int.Parse(fieldSplit[0]);
+            int yFrom = int.Parse(fieldSplit[1]);
 
-            if (_model.Players[_model.CurrentPlayer].OnTableTokens + _model.Players[_model.CurrentPlayer].LostTokens < 9)
+            if (_model.Mill)
             {
+                if (_model.RemoveToken(x, y))
+                {
+                    _model.CurrentPlayer = _model.NextPlayer();
+                    _model.Mill = false;
+                }
+            }
+            else
+            {
+
                 if (_model.PlaceToken(x, y))
                 {
                     if (_model.IsInMill(x, y))
@@ -305,52 +316,37 @@ namespace MillTest.ViewModel
                     }
 
                 }
-                else
+                else if (_model.MoveToken(xFrom, yFrom, x, y))
                 {
-                    Console.WriteLine(_model.LastStep + " -- " + x + " : " + y);
-                    fieldSplit = _model.LastStep.Split(',');
-                    int xFrom = int.Parse(fieldSplit[0]);
-                    int yFrom = int.Parse(fieldSplit[1]);
-
-                    if (_model.MoveToken(xFrom, yFrom, x, y))
-                    {
-                        if (!_model.IsInMill(x, y))
-                        {
-                            _model.CurrentPlayer = _model.NextPlayer();
-                        }
-                        else
-                        {
-                            _model.Mill = true;
-                        }
-                    }
-                    else if (_model.JumpToken(xFrom, yFrom, x, y))
-                    {
-                        if (!_model.IsInMill(x, y))
-                        {
-                            _model.CurrentPlayer = _model.NextPlayer();
-                        }
-                        else
-                        {
-                            _model.Mill = true;
-                        }
-                    }
-
-                }
-
-                if (_model.Mill)
-                {
-                    if (_model.RemoveToken(x, y))
+                    if (!_model.IsInMill(x, y))
                     {
                         _model.CurrentPlayer = _model.NextPlayer();
-                        _model.Mill = false;
+                    }
+                    else
+                    {
+                        _model.Mill = true;
+                    }
+                }
+                else if (_model.JumpToken(xFrom, yFrom, x, y))
+                {
+                    if (!_model.IsInMill(x, y))
+                    {
+                        _model.CurrentPlayer = _model.NextPlayer();
+                    }
+                    else
+                    {
+                        _model.Mill = true;
                     }
                 }
 
+
+
+            }
 
                 // Console.WriteLine(_model.LastStep +" -- " +x +" : " +y);
                 UpdateView(_model.GameTable);
                 _model.LastStep = x + "," + y;
-            }
+            
         }
 
         
