@@ -113,6 +113,16 @@ namespace TicTacToe.ViewModel
             }
         }
 
+        private bool _ShowEvaluate;
+        public bool ShowEvaluate
+        {
+            get { return _ShowEvaluate; }
+            set
+            {
+                _ShowEvaluate = value;
+                OnPropertyChanged("ShowEvaluate");
+            }
+        }
         private bool nextIsCPU = false;
 
         private int wrongStepHelper = 0;
@@ -131,6 +141,7 @@ namespace TicTacToe.ViewModel
 
         public DelegateCommand PlayerChangedCommand { get; set; }
         public DelegateCommand DifficultyChangedCommand { get; set; }
+        public DelegateCommand EvaluationCommand { get; set; }
 
         #endregion
 
@@ -162,12 +173,29 @@ namespace TicTacToe.ViewModel
             CC = false;
             Easy = true;
             Hard = false;
+            ShowEvaluate = false;
             fieldValues = new List<Tuple<int, int, int>>();
             PlayerChangedCommand = new DelegateCommand(PlayerSettingsChanged);
             DifficultyChangedCommand = new DelegateCommand(DifficultyChanged);
+            EvaluationCommand = new DelegateCommand(EvaluationChanged);
             Size = Logic.SIZE;
             CreateGameTable(Logic.SIZE);
             NewGame();
+        }
+
+        private void EvaluationChanged(object obj)
+        {
+            ShowEvaluate = !ShowEvaluate;
+            if (!ShowEvaluate)
+            {
+                foreach (var element in Elements)
+                {
+                    if (element.Text != "X" && element.Text != "O")
+                    {
+                        element.Text = "";
+                    }
+                }
+            }
         }
 
         #endregion
@@ -322,12 +350,12 @@ namespace TicTacToe.ViewModel
                 {
                     if (_model.ValueTableValue(_element.X, _element.Y) == "0")
                     {
-                        _element.Text = "";
+                        if(ShowEvaluate) _element.Text = "";
                     }
                     else
                     {
-                        _element.Text = _model.ValueTableValue(_element.X, _element.Y);
-                        fieldValues.Add(new Tuple<int, int, int>(_element.X, _element.Y, int.Parse(_element.Text)));
+                        if (ShowEvaluate) _element.Text = _model.ValueTableValue(_element.X, _element.Y);
+                        fieldValues.Add(new Tuple<int, int, int>(_element.X, _element.Y, int.Parse(_model.ValueTableValue(_element.X, _element.Y))));
                     }
                 }
             }

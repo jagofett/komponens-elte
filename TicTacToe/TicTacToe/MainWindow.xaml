@@ -20,6 +20,10 @@
                 <MenuItem Header="Medium" IsChecked="{Binding Medium}" Command="{Binding DifficultyChangedCommand}" CommandParameter="Medium"/>
                 <MenuItem Header="Hard" IsChecked="{Binding Hard}" Command="{Binding DifficultyChangedCommand}" CommandParameter="Hard"/>
             </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="View evaluation" IsChecked="{Binding ShowEvaluate}" Command="{Binding EvaluationCommand}"/>
+
+            </MenuItem>
         </Menu>
         <ScrollViewer Grid.Row="1" x:Name="scrollbar" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
             <ItemsControl ItemsSource="{Binding Elements}">
