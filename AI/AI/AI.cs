@@ -77,7 +77,7 @@ namespace ai
                     if (bestValue < tmp)
                     {
                         bestValue = tmp;
-                        bestState = val;
+                        bestState = item.getData();
                     }
 
 
@@ -96,7 +96,7 @@ namespace ai
                     if (bestValue > tmp)
                     {
                         bestValue = tmp;
-                        bestState = val;
+                        bestState = item.getData();
                     }
 
                 }
