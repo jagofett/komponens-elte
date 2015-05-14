@@ -164,9 +164,9 @@ namespace Grundy.Library.Model
 	    {
 			if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
 			{
-				//OnCpuTurn();
+				OnCpuTurn();
 				//debug cpu turn.
-				MakeCpuMove();
+				//MakeCpuMove();
 			}
 		}
         public bool Step(State newState)
@@ -183,6 +183,7 @@ namespace Grundy.Library.Model
             {
                 return false;
             }
+            
             var db = curList.Where((t, i) => t.Size != newPile[i].Size).Count();
             if (db > 2)
             {

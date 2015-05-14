@@ -64,6 +64,7 @@ namespace Grundy.View
 	        var step = defStep;
 			if (_ai != null)
             {
+                //step = _ai.doMinimax(this) as State;
                 step = _ai.doAlphaBeta(this) as State;
             }
 	        if (!_model.Step(step))

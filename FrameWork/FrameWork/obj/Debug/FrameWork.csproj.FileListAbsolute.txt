@@ -128,6 +128,7 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\FrameWork.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\FrameWork.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy Game.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Mill.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.exe
@@ -135,6 +136,7 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\MillTest.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy Game.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Mill.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Interfaces.pdb
@@ -151,5 +153,3 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.pdb
-d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy Game.exe
-d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy Game.pdb

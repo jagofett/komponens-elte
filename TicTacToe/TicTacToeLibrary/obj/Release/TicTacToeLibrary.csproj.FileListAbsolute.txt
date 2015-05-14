@@ -7,3 +7,8 @@ D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTa
 D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.csprojResolveAssemblyReference.cache
 D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.dll
 D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.csprojResolveAssemblyReference.cache
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.pdb

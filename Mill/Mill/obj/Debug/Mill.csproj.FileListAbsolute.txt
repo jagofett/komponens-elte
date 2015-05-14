@@ -16,7 +16,9 @@ E:\ELTE\KOMPONENS\komponens-elte\Mill\Mill\bin\Debug\MillTest.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Mill.exe.config
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Mill.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Mill.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Interfaces.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\MillTest.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Interfaces.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\MillTest.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mill.csprojResolveAssemblyReference.cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\MainWindow.baml
@@ -28,5 +30,3 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mil
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mill.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mill.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\obj\Debug\Mill.pdb
-d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Interfaces.dll
-d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\Mill\bin\Debug\Interfaces.pdb

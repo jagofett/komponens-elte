@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Interfaces;
 
@@ -122,13 +123,13 @@ namespace ai
                     if (v < t)
                     {
                         v = t;
-                        bestState = tmp;
+                        bestState = child.getData();
                     }
                     //alpha = Math.Max(alpha, v);
                     if (alpha < v)
                     {
                         alpha = v;
-                        bestState = tmp;
+                        //bestState = child.getData();
                     }
                     if (beta < alpha) break;
                 }
@@ -146,13 +147,13 @@ namespace ai
                     if (v > t)
                     {
                         v = t;
-                        bestState = tmp;
+                        bestState = child.getData();
                     }
                     //beta = Math.Min(beta, v);
                     if (beta > v)
                     {
                         beta = v;
-                        bestState = tmp;
+                        //bestState = child.getData();
                     }
                     if (beta <= alpha) break;
                 }
