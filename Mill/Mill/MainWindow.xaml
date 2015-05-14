@@ -6,13 +6,9 @@
         <Rectangle HorizontalAlignment="Center" Width="500" Height="500" VerticalAlignment="Center" Stroke="Black"/>
         <Rectangle HorizontalAlignment="Center" Width="350" Height="350" VerticalAlignment="Center" Stroke="Black"/>
         <Rectangle HorizontalAlignment="Center" Width="200" Height="200" VerticalAlignment="Center" Stroke="Black"/>
-        <Line X1="68" Y1="56" X2="218" Y2="207"  Stroke="Black" />
-        <Line X1="567" Y1="55" X2="417" Y2="206"  Stroke="Black" />
         <Line X1="318" Y1="56" X2="318" Y2="207"  Stroke="Black" />
-        <Line X1="68" Y1="555" X2="218" Y2="405"  Stroke="Black" />
         <Line X1="68" Y1="305" X2="218" Y2="305"  Stroke="Black" />
         <Line X1="318" Y1="555" X2="318" Y2="405"  Stroke="Black" />
-        <Line X1="567" Y1="555" X2="417" Y2="405"  Stroke="Black" />
         <Line X1="567" Y1="305" X2="417" Y2="305"  Stroke="Black" />
         <ItemsControl ItemsSource="{Binding Elements}">
             <ItemsControl.ItemsPanel>
@@ -26,13 +22,13 @@
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Style.Triggers>
-                                    <DataTrigger Binding="{Binding Dummy}" Value="0">
-                                        <Setter Property="Background" Value="White" />
+                                    <DataTrigger Binding="{Binding Dummy}" Value="-1">
+                                        <Setter Property="Background" Value="Black" />
                                     </DataTrigger>
-                                    <DataTrigger Binding="{Binding Dummy}" Value="1">
+                                    <DataTrigger Binding="{Binding Dummy}" Value="0">
                                         <Setter Property="Background" Value="Blue" />
                                     </DataTrigger>
-                                    <DataTrigger Binding="{Binding Dummy}" Value="2">
+                                    <DataTrigger Binding="{Binding Dummy}" Value="1">
                                         <Setter Property="Background" Value="Red" />
                                     </DataTrigger>
                                 </Style.Triggers>
