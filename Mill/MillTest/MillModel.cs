@@ -272,6 +272,11 @@ namespace MillTest
             }
             return true;
         }
+
+        private bool IsGameOver()
+        {
+            return Players[0].LostTokens == 7 || Players[1].LostTokens == 7;
+        }
     }
 
     public enum Field
