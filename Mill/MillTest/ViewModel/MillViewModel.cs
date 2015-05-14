@@ -328,7 +328,7 @@ namespace MillTest.ViewModel
             fieldSplit = _model.LastStep.Split(',');
             int xFrom = int.Parse(fieldSplit[0]);
             int yFrom = int.Parse(fieldSplit[1]);
-
+            
             if (_model.Mill)
             {
                 if (_model.RemoveToken(x, y))
@@ -382,6 +382,7 @@ namespace MillTest.ViewModel
                 // Console.WriteLine(_model.LastStep +" -- " +x +" : " +y);
                 UpdateView(_model.GameTable);
                 _model.LastStep = x + "," + y;
+                _model.NextStep(x, y, _model.CurrentPlayer);
             
         }
 
