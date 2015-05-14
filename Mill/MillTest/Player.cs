@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MillTest
 {
-    class Player
+    public class Player
     {
         private int _allTokens;
         private int _lostTokens;

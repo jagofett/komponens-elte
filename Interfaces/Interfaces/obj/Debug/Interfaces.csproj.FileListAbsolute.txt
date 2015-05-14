@@ -2,3 +2,11 @@ D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Inte
 D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.dll
 D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
 D:\ELTE\MSC2\Komponens alapú szoftverfejlesztés\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.dll
+E:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.pdb

@@ -4,7 +4,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Grundy.Interface;
+using System.Threading.Tasks;
 
 namespace Grundy.Library.Model
 {
@@ -14,6 +14,7 @@ namespace Grundy.Library.Model
         public bool IsStarted { get; private set; }
         private Player _playerOne;
         private Player _playerTwo;
+        private Dictionary<int, int> values = new Dictionary<int, int>();
 
         public Player ActPlayer
         {
@@ -60,18 +61,46 @@ namespace Grundy.Library.Model
         {
             if (PlayerChange != null)
             {
-                PlayerChange(this, new EventArgs());
+                PlayerChange.Invoke(this, new EventArgs());
             }
         }
 
         public GameLogic()
         {
             IsStarted = false;
+           
         }
+
+   
+
+        private void MakeCpuMove()
+        {
+            var nextStates = GetNextStates(GetState());
+            State selectState = null;
+            foreach (var nextStateObj in nextStates)
+            {
+                var nextState = nextStateObj as State;
+                var value = Evaluate(nextState);
+                if (value == 1)
+                {
+                    selectState = nextState;
+                }
+            }
+            if (selectState == null)
+            {
+                //no winning strategy. select the first var.
+                selectState = nextStates.First() as State;
+            }
+			
+				Step(selectState);
+        }
+
 
         public void Start(int size, GameType type)
         {
             _state = new State(size, type);
+            calculateGrundyValues(size);
+
             switch (type)
             {
                 case GameType.PvP:
@@ -84,12 +113,13 @@ namespace Grundy.Library.Model
                     break;
                 case GameType.CvC:
                     _playerOne = new Player { Name = "CPU 1", PlayerType = PlayerType.ComputerPlayer };
-                    _playerTwo = new Player { Name = "CPU 1", PlayerType = PlayerType.ComputerPlayer };
+                    _playerTwo = new Player { Name = "CPU 2", PlayerType = PlayerType.ComputerPlayer };
                     break;
             }
             IsStarted = true;
             _state.ActPlayer = _playerOne;
             OnGameStart();
+			CheckCpuTurn();
         }
 
         private void CheckGameOver()
@@ -119,17 +149,32 @@ namespace Grundy.Library.Model
             _state.Piles.Insert(pileNumber, new Pile(stackSize));
 
 
-            _state.ActPlayer = ActPlayer.Id == _playerOne.Id ? _playerTwo : _playerOne;
             CheckGameOver();
             if (IsStarted)
             {
+                _state.ActPlayer = ActPlayer.Id == _playerOne.Id ? _playerTwo : _playerOne;
+
                 OnPlayerChange();
+	            CheckCpuTurn();
             }
             return true;
         }
 
+	    private void CheckCpuTurn()
+	    {
+			if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
+			{
+				//OnCpuTurn();
+				//debug cpu turn.
+				MakeCpuMove();
+			}
+		}
         public bool Step(State newState)
         {
+	        if (newState == null)
+	        {
+		        return false;
+	        }
             //check if state is valid next step. (only pile is relevant)
             var newPile = newState.Piles;
             var curList = _state.Piles;
@@ -158,7 +203,10 @@ namespace Grundy.Library.Model
         public List<object> GetNextStates(State startState)
         {
             var states = new List<object>();
-
+	        if (startState == null)
+	        {
+		        return null;
+	        }
             foreach (Pile pile in startState.Piles)
             {
                 int originalSize = pile.Size;
@@ -185,7 +233,51 @@ namespace Grundy.Library.Model
 
         public int Evaluate(State state)
         {
-            throw new NotImplementedException();
+            int value = 0;
+	        if (state == null)
+	        {
+		        return 0;
+	        }
+            foreach (Pile p in state.Piles)
+            {
+                value ^= values[p.Size];
+            }
+
+            if (value == 0) //Winning move
+                return 1;
+            else //Hopefully the opponent makes a mistake
+                return 0;
+        }
+
+        //Transform the nim values, according to the rules of Grundy's game
+        private void calculateGrundyValues(int size)
+        {
+            List<int> list;
+            values[0] = 0;
+
+            //Count grundy value for every possible pile
+            for (int i = 1; i < size; ++i)
+            {
+                list = new List<int>();
+                list.Add(values[i - 1]);
+
+                for (int j = 2; j * 2 < i; ++j)
+                {
+                    list.Add(values[i - j]);
+                }
+
+                values[i] = mex(list);
+            }
+        }
+
+        //Returns the minimum excluded non negative integer
+        private int mex(List<int> list)
+        {
+            for (int i = 0; ; ++i)
+            {
+                if (!list.Contains(i))
+                    return i;
+            }
         }
 
     }
@@ -206,4 +298,14 @@ namespace Grundy.Library.Model
             WinnerPlayer = winner;
         }
     }
+
+	public class StringEventArgs : EventArgs
+	{
+		public string Text { get; set; }
+
+		public StringEventArgs(string text	)
+		{
+			Text = text;
+		}
+	}
 }

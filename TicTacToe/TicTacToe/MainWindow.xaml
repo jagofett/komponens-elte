@@ -15,6 +15,11 @@
                 <MenuItem Header="Player vs CPU" IsChecked="{Binding PC}" Command="{Binding PlayerChangedCommand}" CommandParameter="PC"/>
                 <MenuItem Header="CPU vs CPU" IsChecked="{Binding CC}" Command="{Binding PlayerChangedCommand}" CommandParameter="CC"/>
             </MenuItem>
+            <MenuItem Header="Difficulty">
+                <MenuItem Header="Easy" IsChecked="{Binding Easy}" Command="{Binding DifficultyChangedCommand}" CommandParameter="Easy"/>
+                <MenuItem Header="Medium" IsChecked="{Binding Medium}" Command="{Binding DifficultyChangedCommand}" CommandParameter="Medium"/>
+                <MenuItem Header="Hard" IsChecked="{Binding Hard}" Command="{Binding DifficultyChangedCommand}" CommandParameter="Hard"/>
+            </MenuItem>
         </Menu>
         <ScrollViewer Grid.Row="1" x:Name="scrollbar" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
             <ItemsControl ItemsSource="{Binding Elements}">
@@ -25,17 +30,17 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Command="{Binding StepCommand}" Background="White" CommandParameter="{Binding Id}" Content="{Binding Text}" Focusable="false" MinHeight="30" MinWidth="30" MaxHeight="30" MaxWidth="30" FontWeight="Bold" FontSize="19">
+                        <Button Command="{Binding StepCommand}" CommandParameter="{Binding Id}" Content="{Binding Text}" Focusable="false" MinHeight="30" MinWidth="30" MaxHeight="30" MaxWidth="30" FontWeight="Bold" FontSize="19">
                             <Button.Style>
                                 <!-- gomb stílusa, ahol a színét megadjuk -->
                                 <Style TargetType="Button">
                                     <Style.Triggers>
                                         <!-- a szín egy adatkötés hatására fog változni -->
                                         <DataTrigger Binding="{Binding IsEnabled}" Value="True">
-                                            <Setter Property="Background" Value="Gray" />
+                                            <Setter Property="Background" Value="White" />
                                         </DataTrigger>
                                         <DataTrigger Binding="{Binding IsEnabled}" Value="False">
-                                            <Setter Property="Background" Value="White" />
+                                            <Setter Property="Background" Value="{Binding Color}" />
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>

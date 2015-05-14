@@ -5,11 +5,15 @@ using System.Text;
 
 namespace MillTest
 {
-    class MillModel
+    public class MillModel
     {
         private int _currentPlayer;
         private Player[] _players;
         private Field[,] _gameTable;
+        private String _lastStep;
+        private Boolean _mill;
+        private Evaluate eval;
+
 
         public int CurrentPlayer
         { 
@@ -27,8 +31,13 @@ namespace MillTest
 
         public Field[,] GameTable { get { return _gameTable; } set { _gameTable = value; } }
 
+        public String LastStep { get { return _lastStep; } set { _lastStep = value; } }
+
+        public Boolean Mill { get { return _mill; } set { _mill = value; } }
+
         public MillModel()
         {
+            eval = new Evaluate();
             _currentPlayer = 0;
             _players = new Player[2];
             for (int i = 0; i < 2; ++i )
@@ -37,7 +46,9 @@ namespace MillTest
             }
             _gameTable = new Field[7, 7];
             InitializeGameTable(_gameTable);
-            
+           
+
+
         }
 
         private void InitializeGameTable( Field[,] table )
@@ -82,7 +93,9 @@ namespace MillTest
                     }
                 }
             }
+
         }
+
 
         public bool PlaceToken(int row, int column)
         {
@@ -96,7 +109,7 @@ namespace MillTest
                 return false;
         }
 
-        private int NextPlayer()
+        public int NextPlayer()
         {
             if (CurrentPlayer == 0)
                 return 1;
@@ -272,6 +285,20 @@ namespace MillTest
             }
             return true;
         }
+
+        private bool IsGameOver()
+        {
+            return Players[0].LostTokens == 7 || Players[1].LostTokens == 7;
+        }
+
+        public void NextStep(int row, int col, int player)
+        {
+            eval.SetStep(row, col, player);
+            Console.WriteLine("model: "+eval.GetValue(_gameTable));
+        }
+
+
+
     }
 
     public enum Field

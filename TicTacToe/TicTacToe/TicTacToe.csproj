@@ -34,9 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interfaces">
-      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -98,6 +95,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\AI\AI\AI.csproj">
+      <Project>{1fdfa14b-ce41-42c3-bab2-e15987f43bf9}</Project>
+      <Name>AI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Interfaces\Interfaces\Interfaces.csproj">
+      <Project>{60a0dfef-d376-4506-ba66-f7aa285a205d}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TicTacToeLibrary\TicTacToeLibrary.csproj">
       <Project>{a20146e3-877b-4be8-8aed-77965afc33d9}</Project>
       <Name>TicTacToeLibrary</Name>

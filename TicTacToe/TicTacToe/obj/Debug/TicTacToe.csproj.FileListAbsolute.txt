@@ -1,87 +1,36 @@
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\MainWindow.baml
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\MainWindow.g.cs
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\App.g.cs
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\bin\Debug\TicTacToe.exe.config
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe.exe
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe.pdb
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\bin\Debug\TicTacToe.exe
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\bin\Debug\TicTacToe.pdb
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\MainWindow.g.cs
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\App.g.cs
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\MainWindow.baml
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe.g.resources
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
-D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
-E:\ELTE\KOMPONENS\TicTacToe\bin\Debug\TicTacToe.exe.config
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe.exe
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe.pdb
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\MainWindow.g.cs
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\App.g.cs
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
-E:\ELTE\KOMPONENS\TicTacToe\bin\Debug\TicTacToe.exe
-E:\ELTE\KOMPONENS\TicTacToe\bin\Debug\TicTacToe.pdb
-E:\ELTE\KOMPONENS\TicTacToe\bin\Debug\TicTacToeLibrary.dll
-E:\ELTE\KOMPONENS\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\MainWindow.baml
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe.g.resources
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
-E:\ELTE\KOMPONENS\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.dll
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\FrameWork.exe
-E:\ELTE\KOMPONENS\TicTacToe\TicTacToe\bin\Debug\FrameWork.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\bin\Debug\TicTacToe.exe.config
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\bin\Debug\TicTacToe.exe
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\bin\Debug\TicTacToe.pdb
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\bin\Debug\TicTacToeLibrary.dll
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\MainWindow.g.cs
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\App.g.cs
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\MainWindow.baml
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe.g.resources
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe.exe
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\obj\Debug\TicTacToe.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\ai.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\ai.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.g.cs
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\App.g.cs
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.baml
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.dll
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.g.cs
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\App.g.cs
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.baml
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\FrameWork.exe
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Debug\FrameWork.pdb
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.dll
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.dll
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.pdb
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.g.cs
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\App.g.cs
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.baml
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
-d:\Google Drive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb

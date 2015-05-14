@@ -10,6 +10,22 @@ namespace TicTacToe.ViewModel
     {
         private Boolean _isEnabled;
         private String _text;
+        private String _color;
+
+        public String Color
+        {
+            get
+            {
+                return _color;
+            }
+            set
+            {
+                _color = value;
+                OnPropertyChanged();
+            }
+        }
+        
+        
         public String Text
         {
             get

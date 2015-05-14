@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -75,9 +76,27 @@ namespace Grundy.Library.ViewModel
             get { return !IsStarted; }
         }
 
-        #region Constructors
+        public EventHandler<GrundyWinEvenetArgs>  GameEndEvent { get; set; }
+        private void OnGameEnd(Player winner)
+        {
+            if (GameEndEvent != null)
+            {
+                GameEndEvent(this, new GrundyWinEvenetArgs(winner));
+            }
+        }
 
-        public GrundyViewModel(GameLogic logic)
+	    public EventHandler<StringEventArgs> InfoEvent { get; set; }
+		private void OnInfoText(string info)
+		{
+			if (InfoEvent != null)
+			{
+				InfoEvent(this, new StringEventArgs(info));
+			}
+		}
+
+		#region Constructors
+
+		public GrundyViewModel(GameLogic logic)
         {
             _gameLogic = logic;
             _gameLogic.GameStart += GameStart;
@@ -117,9 +136,10 @@ namespace Grundy.Library.ViewModel
 
         private void FieldUpdate()
         {
+			
             if (Elements != null)
             {
-                _Elements.Clear();
+                //_Elements.Clear();
                 OnPropertyChanged("Elements");
             }
             OnPropertyChanged("PileCount");
@@ -144,12 +164,13 @@ namespace Grundy.Library.ViewModel
 
         private void StepCommand(int id)
         {
-            if (!IsStarted) return;
+            if (!IsStarted || ActPlayer.PlayerType == PlayerType.ComputerPlayer) return;
             var elem = Elements[id];
             if (!_gameLogic.Step(elem.X, elem.Y + 1))
             {
                 Info = " Hibás lépés!";
             }
+
         }
 
         private void GameEnd(object sender, GrundyWinEvenetArgs eventArgs)
@@ -157,14 +178,22 @@ namespace Grundy.Library.ViewModel
             FieldUpdate();
             Info = "Játék vége, a nyertes: " + eventArgs.WinnerPlayer.Name;
             OnPropertyChanged("ButtonEnabled");
-
+            OnGameEnd(eventArgs.WinnerPlayer);
         }
-        private void PlayerChange(object sender, EventArgs eventArgs)
+        private async void PlayerChange(object sender, EventArgs eventArgs)
         {
-            FieldUpdate();
             ActPlayer = _gameLogic.ActPlayer;
-            Info = ActPlayer.Name + "következik!";
-        }
+            
+
+                FieldUpdate();                
+           
+            Info = ActPlayer.Name + " következik!";
+			if (ActPlayer.PlayerType == PlayerType.ComputerPlayer)
+			{
+				//sleep to view cpu-s
+				OnInfoText(Info);
+			}
+		}
 
         #endregion
 

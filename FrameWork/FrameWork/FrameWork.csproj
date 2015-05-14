@@ -34,10 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ai, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\AI\AI\bin\Debug\ai.dll</HintPath>
-    </Reference>
     <Reference Include="Interfaces">
       <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
     </Reference>
@@ -70,6 +66,7 @@
     </Compile>
     <Compile Include="Model\FrameModel.cs" />
     <Compile Include="Model\GameAddedEventArgs.cs" />
+    <Compile Include="Model\GameMock.cs" />
     <Compile Include="ViewModel\DelegateCommand.cs" />
     <Compile Include="ViewModel\FrameViewModel.cs" />
     <Compile Include="ViewModel\GameButton.cs" />
@@ -106,7 +103,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\AI\AI\AI.csproj">
+      <Project>{1fdfa14b-ce41-42c3-bab2-e15987f43bf9}</Project>
+      <Name>AI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Grundy\Grundy.View\Grundy.View.csproj">
+      <Project>{d4a0193c-b0ec-4266-b751-36901eec384c}</Project>
+      <Name>Grundy.View</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mill\Mill\Mill.csproj">
+      <Project>{dd741ed6-9482-4fc6-ad32-b63ed69ee812}</Project>
+      <Name>Mill</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TicTacToe\TicTacToe\TicTacToe.csproj">
+      <Project>{a8a25af7-1c4d-41fb-a864-b000ca1fc5ed}</Project>
+      <Name>TicTacToe</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

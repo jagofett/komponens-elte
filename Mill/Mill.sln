@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillTest", "MillTest\MillTest.csproj", "{646A0DBA-D1A6-4ECD-8EB7-8510D2981F91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mill", "Mill\Mill.csproj", "{DD741ED6-9482-4FC6-AD32-B63ED69EE812}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{646A0DBA-D1A6-4ECD-8EB7-8510D2981F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{646A0DBA-D1A6-4ECD-8EB7-8510D2981F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{646A0DBA-D1A6-4ECD-8EB7-8510D2981F91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD741ED6-9482-4FC6-AD32-B63ED69EE812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD741ED6-9482-4FC6-AD32-B63ED69EE812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD741ED6-9482-4FC6-AD32-B63ED69EE812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD741ED6-9482-4FC6-AD32-B63ED69EE812}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
