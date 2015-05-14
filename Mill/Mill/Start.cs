@@ -16,7 +16,7 @@ namespace Mill
         public void StartGame()
         {
             //use the aiModule to calculate the computer movements. (probably inject to logic!)
-            //_model = new Logic();
+            _model = new MillModel();
 
             // nézemodell létrehozása
             _viewModel = new MillViewModel(_model);

@@ -13,6 +13,9 @@ namespace MillTest.ViewModel
 
         private MillModel _model;
 
+        int xFrom=-1;
+        int yFrom=-1;
+
         private string _Dummy00;
         public string Dummy00
         {
@@ -286,18 +289,72 @@ namespace MillTest.ViewModel
             String[] fieldSplit = field.Split(',');
             int x = int.Parse(fieldSplit[0]);
             int y = int.Parse(fieldSplit[1]);
-            Console.WriteLine(_model.CurrentPlayer);
-            if (_model.PlaceToken(x, y))
-            {
-                _model.CurrentPlayer = _model.NextPlayer();
-                UpdateView(_model.GameTable);
-            }
-           
-           
+            Console.WriteLine(_model.Players[_model.CurrentPlayer].AllTokens + "  --  " + _model.Players[_model.CurrentPlayer].OnTableTokens + " --- " + _model.Players[_model.CurrentPlayer].LostTokens);
 
-            
-            
+            if (_model.Players[_model.CurrentPlayer].OnTableTokens + _model.Players[_model.CurrentPlayer].LostTokens < 9)
+            {
+                if (_model.PlaceToken(x, y))
+                {
+                    if (_model.IsInMill(x, y))
+                    {
+                        _model.Mill = true;
+                    }
+                    else
+                    {
+                        _model.CurrentPlayer = _model.NextPlayer();
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine(_model.LastStep + " -- " + x + " : " + y);
+                    fieldSplit = _model.LastStep.Split(',');
+                    int xFrom = int.Parse(fieldSplit[0]);
+                    int yFrom = int.Parse(fieldSplit[1]);
+
+                    if (_model.MoveToken(xFrom, yFrom, x, y))
+                    {
+                        if (!_model.IsInMill(x, y))
+                        {
+                            _model.CurrentPlayer = _model.NextPlayer();
+                        }
+                        else
+                        {
+                            _model.Mill = true;
+                        }
+                    }
+                    else if (_model.JumpToken(xFrom, yFrom, x, y))
+                    {
+                        if (!_model.IsInMill(x, y))
+                        {
+                            _model.CurrentPlayer = _model.NextPlayer();
+                        }
+                        else
+                        {
+                            _model.Mill = true;
+                        }
+                    }
+
+                }
+
+                if (_model.Mill)
+                {
+                    if (_model.RemoveToken(x, y))
+                    {
+                        _model.CurrentPlayer = _model.NextPlayer();
+                        _model.Mill = false;
+                    }
+                }
+
+
+                // Console.WriteLine(_model.LastStep +" -- " +x +" : " +y);
+                UpdateView(_model.GameTable);
+                _model.LastStep = x + "," + y;
+            }
         }
+
+        
+
 
         private void UpdateView(Field[,] _gametable)
         {
@@ -314,6 +371,11 @@ namespace MillTest.ViewModel
                     {
                         Elements.Where(p => p.X == i && p.Y == j).First().Dummy = 1;
                     }
+                    else if (_gametable[i, j] == Field.Empty)
+                    {
+                        Elements.Where(p => p.X == i && p.Y == j).First().Dummy = -1;
+                    }
+                    
                     
                 }
             }

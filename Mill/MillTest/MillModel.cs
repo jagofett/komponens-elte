@@ -10,6 +10,8 @@ namespace MillTest
         private int _currentPlayer;
         private Player[] _players;
         private Field[,] _gameTable;
+        private String _lastStep;
+        private Boolean _mill;
 
         public int CurrentPlayer
         { 
@@ -26,6 +28,10 @@ namespace MillTest
         public Player[] Players { get { return _players; } }
 
         public Field[,] GameTable { get { return _gameTable; } set { _gameTable = value; } }
+
+        public String LastStep { get { return _lastStep; } set { _lastStep = value; } }
+
+        public Boolean Mill { get { return _mill; } set { _mill = value; } }
 
         public MillModel()
         {
@@ -96,7 +102,7 @@ namespace MillTest
                 return false;
         }
 
-        private int NextPlayer()
+        public int NextPlayer()
         {
             if (CurrentPlayer == 0)
                 return 1;
@@ -277,6 +283,8 @@ namespace MillTest
         {
             return Players[0].LostTokens == 7 || Players[1].LostTokens == 7;
         }
+
+        
     }
 
     public enum Field
