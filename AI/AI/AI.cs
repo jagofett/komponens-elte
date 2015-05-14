@@ -59,7 +59,7 @@ namespace ai
         private Object minimax(GameTree<Object> node, int depth, bool maximizingPlayer, IGame game)
         {
 
-            if (depth == 0 || node.IsTerminate() /*|| node is terminal*/)
+            if (depth == 0|| node.IsTerminal())
             {
 
                 return node.getData();
@@ -93,7 +93,7 @@ namespace ai
                     Object val = minimax(item, depth - 1, true, game);
                     //bestValue = Math.Min(bestValue, val);
                     int tmp = game.Evaluate(val);
-                    if (bestValue < tmp)
+                    if (bestValue > tmp)
                     {
                         bestValue = tmp;
                         bestState = val;
@@ -106,20 +106,20 @@ namespace ai
 
         private Object alphaBeta(GameTree<Object> node, int depth, int alpha, int beta, bool maximizingPlayer, IGame game)
         {
-            if (depth == 0 || node.IsTerminate() /*|| node is terminal*/)
+            if (depth == 0 || node.IsTerminal())
             {
                 return node.getData();
             }
             if (maximizingPlayer)
             {
                 int v = -10000;
-                Object bestState = null;
+                Object bestState = (Object)new Object();
                 foreach (GameTree<Object> child in node)
                 {
                     Object tmp = alphaBeta(child, depth - 1, alpha, beta, false, game);
                     //v = Math.Max(game.Evaluate(bestState), game.Evaluate(tmp));
                     int t = game.Evaluate(tmp);
-                    if (bestState == null || game.Evaluate(bestState) < t)
+                    if (v < t)
                     {
                         v = t;
                         bestState = tmp;
@@ -137,13 +137,13 @@ namespace ai
             else
             {
                 int v = 1000;
-                Object bestState = null;
+                Object bestState = (Object)new Object();
                 foreach (GameTree<Object> child in node)
                 {
                     Object tmp = alphaBeta(child, depth - 1, alpha, beta, false, game);
                     int t = game.Evaluate(tmp);
                     //v = Math.Min(v, alphaBeta(child, depth - 1, alpha, beta, true, game));
-                    if (bestState == null ||  game.Evaluate(bestState) > t)
+                    if (v > t)
                     {
                         v = t;
                         bestState = tmp;
