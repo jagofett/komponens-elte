@@ -3,8 +3,16 @@ E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
 E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csprojResolveAssemblyReference.cache
 E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
 E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
+<<<<<<< HEAD
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csprojResolveAssemblyReference.cache
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
+=======
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csprojResolveAssemblyReference.cache
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
+>>>>>>> origin/master

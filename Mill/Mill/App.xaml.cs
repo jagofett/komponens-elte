@@ -20,7 +20,7 @@ namespace Mill
 
         private void App_Startup(object sender, StartupEventArgs e)
         {
-            new Start().StartGame();
+            new Start().StartGame(null);
         }
     }
 }

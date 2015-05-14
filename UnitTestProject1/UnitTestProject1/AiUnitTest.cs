@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Interfaces;
-using TicTacToeLibrary;
+using TicTacToe.Model;
+using ai;
 
 
 namespace UnitTestProject1
@@ -12,7 +13,13 @@ namespace UnitTestProject1
         [TestMethod]
         public void Minimax_Test(IGame game)
         {
-            
+            State testState = new State(3);
+            testState.SetTableValue(0, 0, 0);
+            testState.SetTableValue(0, 1, 1);
+
+            Ai ai = new Ai();
+            ai.makeGameTree()
+
         }
 
         [TestMethod]

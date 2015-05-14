@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,7 @@ namespace Grundy.View
             _viewModel = new GrundyViewModel(_model);
             _viewModel.GameEndEvent += ModelGameEnd;
 			//message display event:
-	        _viewModel.InfoEvent += (sender, args) => MessageBox.Show(args.Text);
+	        //_viewModel.InfoEvent += (sender, args) => MessageBox.Show(args.Text);
 
 			_view.DataContext = _viewModel;
             _view.Closing += _view_Closing;

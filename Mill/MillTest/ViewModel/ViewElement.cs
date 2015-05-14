@@ -53,5 +53,6 @@ namespace MillTest.ViewModel
         public int X { get; set; }
         public int Y { get; set; }
         public DelegateCommand MillStepCommand { get; set; }
+        public DelegateCommand PlayerChangedCommand { get; set; }
     }
 }

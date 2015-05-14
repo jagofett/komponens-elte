@@ -4,17 +4,29 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Debug\
+=======
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\
+>>>>>>> origin/master
 TicTacToe
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\App.xaml
 11151548125
 
 10155411674
 15-267455369
+=======
+d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\App.xaml
+11151548125
+
+10855645841
+65126311352
+>>>>>>> origin/master
 MainWindow.xaml;
 
-True
+False
 
