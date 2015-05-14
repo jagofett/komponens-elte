@@ -36,9 +36,12 @@ namespace FrameWork.Model
             foreach (var type in types)
             {
                 IGame g = (IGame)Activator.CreateInstance(type);
-                games.Add(g);
                 String gameName = type.Assembly.FullName.Split(',')[0];
-                GameAdded(this, new GameAddedEventArgs(games.Count - 1, gameName));
+                if (gameName != "FrameWork")
+                {
+                    games.Add(g);
+                    GameAdded(this, new GameAddedEventArgs(games.Count - 1, gameName));
+                }
             }
             
             //Test

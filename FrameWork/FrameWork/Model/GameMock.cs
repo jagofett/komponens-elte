@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Interfaces;
 
 namespace FrameWork.Model
 {
@@ -11,15 +12,22 @@ namespace FrameWork.Model
     {
         Window window;
 
-        public void newGame()
+        public void StartGame(IAi ai)
         {
             window = new Window();
             window.Show();
         }
 
-        public void quitGame()
+        public void QuitGame()
         {
             window.Close();
         }
+
+        public int Evaluate(object o) { return 0; }
+        public object GetState() { return null; }
+        public List<object> GetNextStates(object o) { return null; }
+
+
+
     }
 }
