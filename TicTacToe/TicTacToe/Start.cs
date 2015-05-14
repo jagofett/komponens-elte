@@ -9,6 +9,7 @@ using Interfaces;
 using TicTacToe.Model;
 using TicTacToe.ViewModel;
 using TicTacToeLibrary.ViewModel;
+using TicTacToeLibrary.Model;
 
 namespace TicTacToe
 {
@@ -34,6 +35,7 @@ namespace TicTacToe
             _view.Show();
 
             Testing test = new Testing();
+            UnitTesting unitTest = new UnitTesting();
         }
 
         private void GameEnded(object sender, TicTacToeViewModel.WinEventArgs e)

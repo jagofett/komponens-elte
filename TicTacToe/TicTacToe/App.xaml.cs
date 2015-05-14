@@ -22,7 +22,7 @@ namespace TicTacToe
 
         private void App_Startup(object sender, StartupEventArgs e)
         {
-            //new Start().newGame();
+            new Start().StartGame(null);
         }
     }
 }

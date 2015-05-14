@@ -1,4 +1,10 @@
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.dll
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\bin\Release\TicTacToeLibrary.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.dll
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToeLibrary\obj\Release\TicTacToeLibrary.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToeLibrary\bin\Release\TicTacToeLibrary.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToeLibrary\bin\Release\TicTacToeLibrary.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToeLibrary\obj\Release\TicTacToeLibrary.csprojResolveAssemblyReference.cache
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToeLibrary\obj\Release\TicTacToeLibrary.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToeLibrary\obj\Release\TicTacToeLibrary.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToeLibrary\bin\Release\TicTacToeLibrary.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToeLibrary\bin\Release\TicTacToeLibrary.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToeLibrary\obj\Release\TicTacToeLibrary.csprojResolveAssemblyReference.cache
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToeLibrary\obj\Release\TicTacToeLibrary.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToeLibrary\obj\Release\TicTacToeLibrary.pdb

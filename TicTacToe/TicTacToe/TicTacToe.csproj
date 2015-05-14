@@ -34,8 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ai">
+      <HintPath>..\..\system\komponens-elte\AI\AI\bin\Debug\ai.dll</HintPath>
+    </Reference>
     <Reference Include="Interfaces">
-      <HintPath>..\..\Interfaces\Interfaces\bin\Release\Interfaces.dll</HintPath>
+      <HintPath>..\..\system\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

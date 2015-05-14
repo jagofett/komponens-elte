@@ -258,10 +258,61 @@ namespace TicTacToe.Model
             int newValue = eval.GetFieldValue(eval.Star(state, row, col, 2), 2) -
                             eval.GetFieldValue(eval.Star(state, row, col, 1), 1);
 
-            state.SetValueTableValue(row, col, newValue);
+            state.SetValueTableValue(row, col, Math.Abs(newValue));
 
             state.SetValue(state.GetValue() - (oldValue - newValue));
 
+        }
+
+        private void assert(bool expr)
+        {
+            if (!expr)
+            {
+                throw new System.Exception("Testing assertion failed");
+            }
+        }
+
+        public void RunTests()
+        {
+            //start new game
+            NewGame();
+            //state exists
+            assert(state!=null);
+
+            //put piece in desired position
+            UpdateTable(2, 2, 2);
+            assert(state.GetTableValue(2, 2) == 2);
+            UpdateTable(2, 3, 1);
+            assert(state.GetTableValue(2, 3) == 1);
+
+            //value table value string conversion
+            assert(ValueTableValue(2, 2) == state.GetValueTableValue(2, 2).ToString());
+
+            //check gameover (should not be)
+            assert(!IsGameOver());
+
+            //start creating gameover situation
+            UpdateTable(3, 2, 2);
+            UpdateTable(4, 2, 2);
+            UpdateTable(5, 2, 2);
+            
+
+            //build star for pattern recognition
+            List<string> star = eval.Star(state, 6, 2, 2);
+            assert(star.Count == 4);
+
+
+            //evaluate strength of chosen field
+            UpdateValueTable(6, 2);
+            assert(state.GetValueTableValue(6, 2) == 1130);
+
+            //place piece to create gameover situation
+            UpdateTable(6, 2, 2);
+
+            //check gameover again (should be)
+            assert(IsGameOver());
+
+           
         }
 
     }

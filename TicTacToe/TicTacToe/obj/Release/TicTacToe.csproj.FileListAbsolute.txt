@@ -1,18 +1,41 @@
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe.config
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToe.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Release\FrameWork.exe
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToeLibrary.dll
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Release\TicTacToeLibrary.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\bin\Release\FrameWork.pdb
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.csprojResolveAssemblyReference.cache
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\MainWindow.g.cs
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\App.g.cs
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe_MarkupCompile.cache
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe_MarkupCompile.lref
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\MainWindow.baml
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.g.resources
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.Properties.Resources.resources
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.Cache
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.exe
-E:\ELTE\KOMPONENS\komponens-elte\TicTacToe\TicTacToe\obj\Release\TicTacToe.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\TicTacToe.exe.config
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe.csprojResolveAssemblyReference.cache
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\MainWindow.g.cs
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\App.g.cs
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe_MarkupCompile.cache
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe_MarkupCompile.lref
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\TicTacToe.exe
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\TicTacToe.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\ai.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\Interfaces.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\TicTacToeLibrary.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\TicTacToeLibrary.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\ai.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\bin\Release\Interfaces.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\MainWindow.baml
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe.g.resources
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe.Properties.Resources.resources
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.Cache
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe.exe
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain\TicTacToe\obj\Release\TicTacToe.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\TicTacToe.exe.config
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe.exe
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\TicTacToe.exe
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\TicTacToe.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\ai.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\Interfaces.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\TicTacToeLibrary.dll
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\TicTacToeLibrary.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\ai.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\bin\Release\Interfaces.pdb
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe.csprojResolveAssemblyReference.cache
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\MainWindow.g.cs
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\App.g.cs
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe_MarkupCompile.cache
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe_MarkupCompile.lref
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\MainWindow.baml
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe.g.resources
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe.Properties.Resources.resources
+D:\ELTE\Software Information Technology MSc\Komponens alapú szoftverfejlesztés\TicTacToeAgain másolata\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.Cache
+E:\ELTE\KOMPONENS\TicTacToeAgain\TicTacToe\bin\Release\TicTacToe.exe.config
