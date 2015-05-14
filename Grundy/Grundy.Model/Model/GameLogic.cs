@@ -93,7 +93,6 @@ namespace Grundy.Library.Model
             }
 			
 				Step(selectState);
-
         }
 
 

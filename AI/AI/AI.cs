@@ -59,7 +59,7 @@ namespace ai
         private Object minimax(GameTree<Object> node, int depth, bool maximizingPlayer, IGame game)
         {
 
-            if (depth == 0/*|| node is terminal*/)
+            if (depth == 0 || node.IsTerminate() /*|| node is terminal*/)
             {
 
                 return node.getData();
@@ -106,7 +106,7 @@ namespace ai
 
         private Object alphaBeta(GameTree<Object> node, int depth, int alpha, int beta, bool maximizingPlayer, IGame game)
         {
-            if (depth == 0 /*|| node is terminal*/)
+            if (depth == 0 || node.IsTerminate() /*|| node is terminal*/)
             {
                 return node.getData();
             }

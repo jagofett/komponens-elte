@@ -5,6 +5,5 @@ E:\ELTE\KOMPONENS\komponens-elte\Mill\MillTest\obj\Debug\MillTest.dll
 E:\ELTE\KOMPONENS\komponens-elte\Mill\MillTest\obj\Debug\MillTest.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\MillTest\bin\Debug\MillTest.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\MillTest\bin\Debug\MillTest.pdb
-d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\MillTest\obj\Debug\MillTest.csprojResolveAssemblyReference.cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\MillTest\obj\Debug\MillTest.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Mill\MillTest\obj\Debug\MillTest.pdb
