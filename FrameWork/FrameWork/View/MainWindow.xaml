@@ -11,7 +11,20 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Button Height="100" Width="100"  Command="{Binding ButtonCommand}" Content="{Binding Content}" CommandParameter="{Binding}" />
+                    <Button Height="100" Width="100" Command="{Binding ButtonCommand}" CommandParameter="{Binding}" >
+                        <Button.Style>
+                            <!-- megadjuk az elemek stílusát -->
+                            <Style TargetType="Button">
+                                <!-- háttér (ez megadható közvetlenül a gombban is) -->
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="{Binding Color}" />
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Content" Value="{Binding Content}" />
+                            </Style>
+                        </Button.Style>
+                    </Button>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>

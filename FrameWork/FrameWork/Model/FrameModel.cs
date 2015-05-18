@@ -14,13 +14,11 @@ namespace FrameWork.Model
     {
         List<IGame> games;
         private IAi _ai;
-        int currentGame;
 
         public event EventHandler<GameAddedEventArgs> GameAdded;
         
         public FrameModel()
         {
-            currentGame = -1;
         }
 
         public void init()
@@ -44,15 +42,16 @@ namespace FrameWork.Model
                 }
             }
             
-            //Test
+        }
 
-            /*games= new List<IGame>();
+        public void test(){
+            games= new List<IGame>();
             games.Add(new GameMock());
             games.Add(new GameMock());
             games.Add(new GameMock());
             GameAdded(this, new GameAddedEventArgs(0, "Test1"));
             GameAdded(this, new GameAddedEventArgs(0, "Test2"));
-            GameAdded(this, new GameAddedEventArgs(0, "Test3"));*/
+            GameAdded(this, new GameAddedEventArgs(0, "Test3"));
         }
 
         FrameModel(List<IGame> games)
@@ -62,20 +61,12 @@ namespace FrameWork.Model
 
         public void startGame(int i)
         {
-            if (currentGame == -1)
-            {
-                currentGame = i;
-                games[currentGame].StartGame(_ai);
-            }
+            games[i].StartGame(_ai);
         }
 
-        public void endGame()
+        public void endGame(int i)
         {
-            if (currentGame != -1)
-            {
-                games[currentGame].QuitGame();
-                currentGame = -1;
-            }
+            games[i].QuitGame();
         }
 
         public void PreLoad()

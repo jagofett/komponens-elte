@@ -21,29 +21,33 @@ namespace FrameWork.ViewModel
             Games = new ObservableCollection<GameButton>();
             _model.GameAdded += new EventHandler<GameAddedEventArgs>(model_gameAdded);
             _model.init();
-
-            Games.Add(new GameButton
-            {
-                Content = "Stop Game",
-                Index = -1,
-                ButtonCommand = new DelegateCommand(button => _model.endGame())
-            });
         }
 
         private void model_gameAdded(object sender, GameAddedEventArgs e)
         {
             Games.Add(new GameButton
-                {
-                        Content = e.Name,
-                        Index = e.Index,
-                        ButtonCommand = new DelegateCommand(button => ButtonClick(button as GameButton))
-                 });
+            {
+                Content = e.Name,
+                Started = false,
+                Index = e.Index,
+                ButtonCommand = new DelegateCommand(button => ButtonClick(button as GameButton))
+            });
             OnPropertyChanged("Games");
         }
 
         private void ButtonClick(GameButton gameButton)
         {
-            _model.startGame(gameButton.Index);
+            if (gameButton.Started)
+            {
+                _model.endGame(gameButton.Index);
+                gameButton.Started = false;
+            }
+            else
+            {
+                _model.startGame(gameButton.Index);
+                gameButton.Started = true;
+            }
+            OnPropertyChanged("Games");
         }
 
     }

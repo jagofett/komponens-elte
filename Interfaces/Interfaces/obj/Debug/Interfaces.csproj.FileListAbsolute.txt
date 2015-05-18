@@ -10,3 +10,8 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\b
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.dll
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\zoli\Desktop\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\zoli\Desktop\komponens-elte\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\zoli\Desktop\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\zoli\Desktop\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\zoli\Desktop\komponens-elte\Interfaces\Interfaces\obj\Debug\Interfaces.pdb

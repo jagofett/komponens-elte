@@ -53,3 +53,23 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 >>>>>>> origin/master
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\ai.dll
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.dll
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.dll
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\ai.pdb
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\Interfaces.pdb
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.g.cs
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\App.g.cs
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\MainWindow.baml
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\zoli\Desktop\komponens-elte\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb

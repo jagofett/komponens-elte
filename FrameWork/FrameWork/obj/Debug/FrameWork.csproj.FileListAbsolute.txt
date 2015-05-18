@@ -153,3 +153,15 @@ d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.csproj.GenerateResource.Cache
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.exe
 d:\GoogleDrive\ELTE\2014-2015-2\komponens\komponens-elte\FrameWork\FrameWork\obj\Debug\FrameWork.pdb
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy Game.exe
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Mill.exe
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.exe
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\MillTest.dll
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.dll
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\ai.pdb
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy Game.pdb
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Mill.pdb
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToe.pdb
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\Grundy.Library.pdb
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\MillTest.pdb
+C:\Users\zoli\Desktop\komponens-elte\FrameWork\FrameWork\bin\Debug\TicTacToeLibrary.pdb
