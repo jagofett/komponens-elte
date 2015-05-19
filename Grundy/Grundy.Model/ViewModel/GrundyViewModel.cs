@@ -39,8 +39,13 @@ namespace Grundy.Library.ViewModel
             get { return _mainSize; }
             set
             {
-                _mainSize = IsStarted ? _mainSize : value;
-                OnPropertyChanged("Size");
+                if (!IsStarted)
+                {
+                    _mainSize = value;
+                    Elements = new ObservableCollection<GrundyElement>();
+                    OnPropertyChanged("Size");
+                }
+                
             }
         }
 
