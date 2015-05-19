@@ -14,6 +14,10 @@ namespace TicTacToe.Model
         private int[,] valueTable;
         private int value;
 
+        public int lastRow { get; set; }
+        public int lastCol { get; set; }
+        public int lastVal { get; set; }
+
         public State(int size)
         {
             table = new int[size, size];

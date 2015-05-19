@@ -53,7 +53,9 @@ namespace TicTacToe.Model
             player = actPlayer;
 
             state.SetTableValue(row, col, player);  //set new piece on table
-
+            state.lastRow = row;
+            state.lastCol = col;
+            state.lastVal = player;
             
 
             for (int i = 0; i < SIZE; i++)
@@ -313,6 +315,52 @@ namespace TicTacToe.Model
             assert(IsGameOver());
 
            
+        }
+
+
+        public List<object> GetNextStates(State startState)
+        {
+            List<object> nextStates = new List<object>();
+            var next = startState.lastVal == 2 ? 1 : 2;
+            for (int i = 0; i < SIZE; i++)
+            {
+                for (int j = 0; j < SIZE; j++)
+                {
+                    if (startState.GetTableValue(i, j) == 0)
+                    {
+                        startState.SetTableValue(i, j, next);
+                        startState.lastCol = j;
+                        startState.lastRow = i;
+                        startState.lastVal = next;
+                        nextStates.Add(startState);
+                        startState.SetTableValue(i, j, 0);
+                    }
+                }
+            }
+
+            return nextStates;
+        }
+
+        public void NextCpuStep(State paramState)
+        {
+            player = player == 1 ? 2 : 1;
+            UpdateTable(paramState.lastRow, paramState.lastCol, player);
+        }
+
+        public State GetState()
+        {
+            return state;
+        }
+
+        public int Evaluate(State testState)
+        {
+            var next = testState.lastVal == 2 ? 1 : 2;
+
+            List<string> star = eval.Star(testState, testState.lastRow, testState.lastCol, next);
+
+            UpdateValueTable(testState.lastRow, testState.lastCol);
+
+            return state.GetValueTableValue(testState.lastRow, testState.lastCol);
         }
 
     }

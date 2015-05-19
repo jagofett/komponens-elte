@@ -161,6 +161,16 @@ namespace TicTacToe.ViewModel
 
         public event EventHandler<WinEventArgs> GameEnded;
 
+        public EventHandler CpuStep;
+
+        private void OnCpuStep()
+        {
+            if (CpuStep != null)
+            {
+                CpuStep(this, new EventArgs());
+            }
+        }
+
 
         #endregion
 
@@ -394,8 +404,6 @@ namespace TicTacToe.ViewModel
         /// </summary>
         private void CPUStep()
         {
-            //TODO itt kell hívni az AI-t
-
             Tuple<int, int, int> chosenField;
             bool bestStep = true;
             if (!Hard)
