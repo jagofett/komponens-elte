@@ -323,8 +323,7 @@ namespace MillTest.ViewModel
             String[] fieldSplit = field.Split(',');
             int x = int.Parse(fieldSplit[0]);
             int y = int.Parse(fieldSplit[1]);
-            //Console.WriteLine(_model.CurrentPlayer+": "+ _model.Players[_model.CurrentPlayer].AllTokens + "  --  " + _model.Players[_model.CurrentPlayer].OnTableTokens + " --- " + _model.Players[_model.CurrentPlayer].LostTokens);
-            //Console.WriteLine(_model.CurrentPlayer+": "+_model.LastStep + " -- " + x + " : " + y);
+ 
             fieldSplit = _model.LastStep.Split(',');
             int xFrom = int.Parse(fieldSplit[0]);
             int yFrom = int.Parse(fieldSplit[1]);
@@ -379,10 +378,9 @@ namespace MillTest.ViewModel
 
             }
 
-                // Console.WriteLine(_model.LastStep +" -- " +x +" : " +y);
                 UpdateView(_model.GameTable);
                 _model.LastStep = x + "," + y;
-                _model.NextStep(x, y, _model.CurrentPlayer);
+//                _model.NextStep(x, y, _model.CurrentPlayer);
             
         }
 

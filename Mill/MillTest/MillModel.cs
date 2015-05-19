@@ -12,7 +12,7 @@ namespace MillTest
         private Field[,] _gameTable;
         private String _lastStep;
         private Boolean _mill;
-       // private Evaluate eval;
+    
 
 
         public int CurrentPlayer
@@ -37,7 +37,7 @@ namespace MillTest
 
         public MillModel()
         {
-         //   eval = new Evaluate();
+      
             _currentPlayer = 0;
             _players = new Player[2];
             for (int i = 0; i < 2; ++i )
@@ -291,11 +291,11 @@ namespace MillTest
             return Players[0].LostTokens == 7 || Players[1].LostTokens == 7;
         }
 
-        public void NextStep(int row, int col, int player)
+        /*public void NextStep(int row, int col, int player)
         {
-           /* eval.SetStep(row, col, player);
-            Console.WriteLine("model: "+eval.GetValue(_gameTable));*/
-        }
+           eval.SetStep(row, col, player);
+          
+        }*/
 
 
 
