@@ -19,15 +19,18 @@ namespace TicTacToe
         private Logic _model;
         private MainWindow _view;
         private string Player;
+        private IAi _ai;
 
         public void StartGame(IAi aiModule)
 		{
-			//use the aiModule to calculate the computer movements. (probably inject to logic!)
+            _ai = aiModule;
+			//use the aiModule to calculate the computer movements.
 			_model = new Logic();
 
             // nézemodell létrehozása
             _viewModel = new TicTacToeViewModel(_model);
             _viewModel.GameEnded += GameEnded;
+            _viewModel.CpuStep += CpuStep;
 
             // nézet létrehozása
             _view = new MainWindow();
@@ -51,6 +54,12 @@ namespace TicTacToe
             }
         }
 
+        private void CpuStep(object sender, EventArgs e)
+        {
+            var state = _ai.doAlphaBeta(this);
+            _model.NextCpuStep((State)state);
+        }
+
         public void QuitGame()
         {
             _view.Close();
@@ -58,17 +67,17 @@ namespace TicTacToe
 
 	    public List<object> GetNextStates(object actState)
 	    {
-		    throw new NotImplementedException();
+            return _model == null ? null : _model.GetNextStates(actState as State);
 	    }
 
 	    public object GetState()
 	    {
-		    throw new NotImplementedException();
+            return _model == null ? null : _model.GetState();
 	    }
 
 	    public int Evaluate(object state)
 	    {
-		    throw new NotImplementedException();
+            return (int)(_model == null ? int.MinValue : _model.Evaluate(state as State));
 	    }
     }
 }
