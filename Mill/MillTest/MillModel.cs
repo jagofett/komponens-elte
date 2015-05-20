@@ -37,18 +37,26 @@ namespace MillTest
 
         public MillModel()
         {
-      
-            _currentPlayer = 0;
             _players = new Player[2];
-            for (int i = 0; i < 2; ++i )
+
+            for (int i = 0; i < 2; ++i)
             {
                 _players[i] = new Player();
             }
             _gameTable = new Field[7, 7];
+            InitializeGame();
+
+        }
+
+        internal void InitializeGame()
+        {
+            _currentPlayer = 0;
+            for (int i = 0; i < 2; ++i)
+            {
+                Players[i].InitializePlayer();
+            }
             InitializeGameTable(_gameTable);
             _lastStep = "3,3";
-
-
         }
 
         private void InitializeGameTable( Field[,] table )
@@ -286,7 +294,7 @@ namespace MillTest
             return true;
         }
 
-        private bool IsGameOver()
+        internal bool IsGameOver()
         {
             return Players[0].LostTokens == 7 || Players[1].LostTokens == 7;
         }

@@ -334,6 +334,8 @@ namespace MillTest.ViewModel
                 {
                     _model.CurrentPlayer = _model.NextPlayer();
                     _model.Mill = false;
+                    if (_model.IsGameOver())
+                        _model.InitializeGame();
                 }
             }
             else

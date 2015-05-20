@@ -49,6 +49,11 @@ namespace MillTest
 
         public Player()
         {
+            InitializePlayer();
+        }
+
+        internal void InitializePlayer()
+        {
             _allTokens = 9;
             _lostTokens = 0;
             _onTableTokens = 0;
